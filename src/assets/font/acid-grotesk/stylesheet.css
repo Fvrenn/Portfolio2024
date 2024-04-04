@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "acid_groteskbold";
+  src: url("acid-grotesk-bold-webfont.woff2") format("woff2"),
+    url("acid-grotesk-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "acid_groteskextra_light";
+  src: url("acid-grotesk-extralight-webfont.woff2") format("woff2"),
+    url("acid-grotesk-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "acid_grotesklight";
+  src: url("acid-grotesk-light-webfont.woff2") format("woff2"),
+    url("acid-grotesk-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "acid_groteskmedium";
+  src: url("acid-grotesk-medium-webfont.woff2") format("woff2"),
+    url("acid-grotesk-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "acid_grotesknormal";
+  src: url("acid-grotesk-normal-webfont.woff2") format("woff2"),
+    url("acid-grotesk-normal-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "acid_groteskregular";
+  src: url("acid-grotesk-regular-webfont.woff2") format("woff2"),
+    url("acid-grotesk-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "acid_groteskthin";
+  src: url("acid-grotesk-thin-webfont.woff2") format("woff2"),
+    url("acid-grotesk-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
