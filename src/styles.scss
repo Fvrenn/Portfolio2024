@@ -1,9 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
-body{
+// !COLOR
+$grey-black: #202020;
+$red-color: #dc2323;
+$white-color: #fff;
+$dark-mod-blue: #e3f7f7;
+
+// e3f7f7
+body {
     background-color: #F4F9FF;
+    background-color: all linear 0.1s;
 }
 
 body.dark-theme {
-    background-color: #333;
+    background-color: #0b0a0a;
     color: #fff;
+    transition: background-color linear 0.3s;
 }
+
+body.dark-theme label {
+    border-color: $dark-mod-blue;
+    transition: border-color linear 0.3s;
+}
+
+body.dark-theme .nav__link {
+    color: $dark-mod-blue;
+    transition: color linear 0.3s;
+}
+
+
+body.dark-theme label:after {
+    background: $dark-mod-blue !important;
+    transition: background linear 0.3s;
+}
+
+
+
+@media screen and (max-width: 851px) {
+    body.dark-theme .nav__menu {
+        border: 1px solid $dark-mod-blue !important;
+        transition: border linear 0.3s;
+        transition: right 0.4s;
+    }
+
+    body.dark-theme .nav-btm {
+        border-bottom: $dark-mod-blue !important;
+        transition: border linear 0.3s;
+    }
+
+    body.dark-theme .nav__item {
+        border-bottom: 0.5px solid $dark-mod-blue !important;
+        transition: border linear 0.3s;
+    }
+    body.dark-theme .dark-mod-togled {
+        border-top: 1px solid $dark-mod-blue !important;
+        transition: border linear 0.3s;
+    }
+}
+
+@media screen and (min-width: 851px) {
+    body.dark-theme .nav {
+        border: 1px solid $dark-mod-blue !important;
+        transition: border linear 0.3s;
+    }
+    body.dark-theme .nav__item:nth-child(n+1):nth-child(-n+4) {
+        border-right: solid 1px $dark-mod-blue !important;
+        transition: border-right linear 0.3s;
+    }
+}
+

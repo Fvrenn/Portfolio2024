@@ -3,34 +3,34 @@
         <div class="nav__menu" id="nav-menu" [ngClass]="{'show-menu': isMenuOpen}">
             <ul class="nav__list">
                 <li class="nav__item dark-mod-togled">
-                    <img class="icons-nav" src="../../../../assets/icons/nav/Sun.svg" alt="">
+                    <img class="icons-nav" [src]="isDarkTheme ? '../../../../assets/icons/nav/dark/Sun.svg' : '../../../../assets/icons/nav/white/Sun.svg'" alt="">
                     <div class="div-input">
                         <input (click)="toggleTheme()" type="checkbox" id="switch" /><label for="switch">Toggle</label>
                     </div>
-                    <img class="icons-nav" src="../../../../assets/icons/nav/Moon.svg" alt="">
+                    <img class="icons-nav" [src]="isDarkTheme ? '../../../../assets/icons/nav/dark/Moon.svg' : '../../../../assets/icons/nav/white/Moon.svg'" alt="">
                 </li>
                 <!-- <hr> -->
                 <li class="nav__item">
                     <a routerLink="/" class="nav__link" (click)="closeMenu()"><img class="icons-nav"
-                            src="../../../../assets/icons/nav/Accueil.svg" alt="">Accueil</a>
-                </li>
-                <!-- <hr> -->
-
-                <li class="nav__item">
-                    <a routerLink="/" class="nav__link" (click)="closeMenu()"><img class="icons-nav"
-                            src="../../../../assets/icons/nav/A-propos.svg" alt="">A propos</a>
+                            [src]="isDarkTheme ? '../../../../assets/icons/nav/dark/Accueil.svg' : '../../../../assets/icons/nav/white/Accueil.svg'" alt="">Accueil</a>
                 </li>
                 <!-- <hr> -->
 
                 <li class="nav__item">
                     <a routerLink="/" class="nav__link" (click)="closeMenu()"><img class="icons-nav"
-                            src="../../../../assets/icons/nav/Projets.svg" alt="">Projet</a>
+                            [src]="isDarkTheme ? '../../../../assets/icons/nav/dark/A-propos.svg' : '../../../../assets/icons/nav/white/A-propos.svg'" alt="">A propos</a>
+                </li>
+                <!-- <hr> -->
+
+                <li class="nav__item">
+                    <a routerLink="/" class="nav__link" (click)="closeMenu()"><img class="icons-nav"
+                            [src]="isDarkTheme ? '../../../../assets/icons/nav/dark/Projets.svg' : '../../../../assets/icons/nav/white/Projets.svg'" alt="">Projet</a>
                 </li>
                 <!-- <hr> -->
 
                 <li class="nav__item  nav-btm">
                     <a routerLink="/" class="nav__link" (click)="closeMenu()"><img class="icons-nav"
-                            src="../../../../assets/icons/nav/Contact.svg" alt="">Contact</a>
+                            [src]="isDarkTheme ? '../../../../assets/icons/nav/dark/Contact.svg' : '../../../../assets/icons/nav/white/Contact.svg'" alt="">Contact</a>
                 </li>
             </ul>
             <div class="nav__close" id="nav-close" (click)="closeMenu()">

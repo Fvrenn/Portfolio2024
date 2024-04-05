@@ -1,5 +1,5 @@
-
 @import url("../../../../assets/font/acid-grotesk/stylesheet.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +24,7 @@ $soft-blue: #e3f7f7;
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -86,20 +87,20 @@ label:after {
   content: "";
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: -1px;
   width: 40px;
-  height: 15px;
+  height: 13px;
   background: $grey-black;
   border-radius: 90px;
   transition: 0.3s;
 }
 
-input:checked + label {
+input:checked+label {
   background: transparent;
   border: 1px solid $white-color;
 }
 
-input:checked + label:after {
+input:checked+label:after {
   left: calc(100% - 0px);
   transform: translateX(-100%);
 }
@@ -113,6 +114,7 @@ label:active:after {
   align-items: center;
   gap: 8px;
 }
+
 .dark-mod-togled input {
   display: flex;
   align-items: center;
@@ -130,8 +132,9 @@ label:active:after {
 
 .nav__item {
   padding: 12px;
-//   border-right: 0.5px solid $grey-black;
+  //   border-right: 0.5px solid $grey-black;
 }
+
 .nav-btm {
   border-right: 0px solid $grey-black;
 }
@@ -139,13 +142,14 @@ label:active:after {
 .nav__menu {
   width: 100%;
 }
- hr{
-    // color: $grey-black; 
-    background-color: $grey-black;
-    width: 1px !important;
-    border: none;
-    // border: solid $grey-black;
-    // max-width: 1px;
+
+hr {
+  // color: $grey-black; 
+  background-color: $grey-black;
+  width: 1px !important;
+  border: none;
+  // border: solid $grey-black;
+  // max-width: 1px;
 }
 
 @media screen and (max-width: 851px) {
@@ -167,6 +171,7 @@ label:active:after {
     padding: 12px;
     border-bottom: 0.5px solid $grey-black;
   }
+
   .nav-btm {
     border-bottom: 1px solid $grey-black;
   }
@@ -196,8 +201,8 @@ label:active:after {
   .nav {
     margin: 0 auto;
     border: 1px solid $grey-black;
-  border-radius: 28px;
-  max-width: 859px;
+    border-radius: 28px;
+    max-width: 859px;
   }
 
   .nav__toggle,
@@ -210,13 +215,13 @@ label:active:after {
     justify-content: space-between;
   }
 
-  .nav__item{
+  .nav__item {
     width: 100%;
     text-align: center;
-    
+
   }
 
-  ul .nav__item:nth-child(n+1):nth-child(-n+4){
+  ul .nav__item:nth-child(n+1):nth-child(-n+4) {
     border-right: solid 1px $grey-black;
   }
 
@@ -226,9 +231,8 @@ label:active:after {
   }
 }
 
-@media screen and (min-width: 1368px) {
 
-}
 
-@media screen and (min-width: 1760px) {
-}
+@media screen and (min-width: 1368px) {}
+
+@media screen and (min-width: 1760px) {}
