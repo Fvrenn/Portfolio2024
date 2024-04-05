@@ -1,12 +1,12 @@
 import { Component, HostListener } from '@angular/core';
-
+import { ThemeService } from '../../../services/theme/theme.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
-
+  constructor(private themeService: ThemeService) { }
   isMenuOpen: boolean = false;
 
   toggleMenu() {
@@ -16,7 +16,8 @@ export class NavComponent {
   closeMenu() {
     this.isMenuOpen = false;
   }
-
+  ngOnInit(): void {
+  }
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const header = document.getElementById('header');
@@ -25,5 +26,9 @@ export class NavComponent {
     } else {
       header?.classList.remove('scroll-header');
     }
+  }
+
+  toggleTheme(): void {
+    this.themeService.toggleDarkTheme();
   }
 }
