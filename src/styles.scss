@@ -28,9 +28,19 @@ body.dark-theme .nav__link {
 
 
 body.dark-theme label:after {
-    background: $dark-mod-blue !important;
+    background: $dark-mod-blue ;
     transition: background linear 0.3s;
 }
+
+
+
+body.dark-theme .icons-nav{
+    color: $dark-mod-blue ;
+    transition: color linear 0.3s;
+}
+
+
+
 
 
 
@@ -54,6 +64,8 @@ body.dark-theme label:after {
         border-top: 1px solid $dark-mod-blue !important;
         transition: border linear 0.3s;
     }
+
+   
 }
 
 @media screen and (min-width: 851px) {
@@ -65,5 +77,29 @@ body.dark-theme label:after {
         border-right: solid 1px $dark-mod-blue !important;
         transition: border-right linear 0.3s;
     }
+
+    body.dark-theme .nav__item:hover {
+        background: $dark-mod-blue;
+        transition: background ease-in 0.3s !important;
+      
+        .nav__link {
+          color: $grey-black !important;
+          transition: color ease-in 0.3s;
+        }
+      
+         .icons-nav {
+          color: $grey-black !important;
+          transition: color ease-in 0.3s ;
+        }
+      
+         label:after {
+          background: $grey-black !important;
+          transition: 0.3s;
+        }
+      
+         label {
+          border: 1px solid $grey-black !important;
+        }
+      }
 }
 

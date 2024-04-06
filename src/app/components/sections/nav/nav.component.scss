@@ -19,6 +19,7 @@ $grey-black: #202020;
 $red-color: #dc2323;
 $white-color: #fff;
 $soft-blue: #e3f7f7;
+
 // header styles
 
 li {
@@ -92,15 +93,15 @@ label:after {
   height: 13px;
   background: $grey-black;
   border-radius: 90px;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 
-input:checked+label {
+input:checked + label {
   background: transparent;
   border: 1px solid $white-color;
 }
 
-input:checked+label:after {
+input:checked + label:after {
   left: calc(100% - 0px);
   transform: translateX(-100%);
 }
@@ -121,12 +122,12 @@ label:active:after {
 }
 
 .icons-nav {
-  width: 16px;
+  width: 19px;
+  color: $grey-black;
 }
 
 .nav__link {
   display: inline-flex;
-  align-items: center;
   gap: 8px;
 }
 
@@ -144,12 +145,18 @@ label:active:after {
 }
 
 hr {
-  // color: $grey-black; 
+  // color: $grey-black;
   background-color: $grey-black;
   width: 1px !important;
   border: none;
   // border: solid $grey-black;
   // max-width: 1px;
+}
+
+
+
+.icons-nav {
+  transition: filter 0.3s ease;
 }
 
 @media screen and (max-width: 851px) {
@@ -168,8 +175,10 @@ hr {
   }
 
   .nav__item {
-    padding: 12px;
+    padding: 16px;
     border-bottom: 0.5px solid $grey-black;
+    align-items: center;
+    display: flex;
   }
 
   .nav-btm {
@@ -218,10 +227,11 @@ hr {
   .nav__item {
     width: 100%;
     text-align: center;
-
+    display: flex;
+    justify-content: center;
   }
 
-  ul .nav__item:nth-child(n+1):nth-child(-n+4) {
+  ul .nav__item:nth-child(n + 1):nth-child(-n + 4) {
     border-right: solid 1px $grey-black;
   }
 
@@ -229,10 +239,43 @@ hr {
     background-color: transparent;
     padding: 0px;
   }
+  .nav__item:nth-child(1) {
+    border-radius: 28px 0px 0px 28px;
+  }
+  .nav__item:nth-child(5) {
+    border-radius: 0px 28px 28px 0px;
+  }
+
+  
+
+.nav__item:hover {
+  background-color: $grey-black;
+  transition: background ease-in 0.3s;
+  cursor: pointer;
+
+  .nav__link {
+    color: $soft-blue;
+    transition: color ease-in 0.3s;
+  }
+
+  .icons-nav {
+    color: $soft-blue;
+    transition: color ease-in 0.3s;
+  }
+
+  label:after {
+    background: $soft-blue;
+    transition: 0.3s;
+  }
+
+  label {
+    border: 1px solid $soft-blue;
+  }
+}
 }
 
+@media screen and (min-width: 1368px) {
+}
 
-
-@media screen and (min-width: 1368px) {}
-
-@media screen and (min-width: 1760px) {}
+@media screen and (min-width: 1760px) {
+}

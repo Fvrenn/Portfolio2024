@@ -6,6 +6,8 @@ import { ThemeService } from '../../../services/theme/theme.service';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'] // Utilisation de 'styleUrls' au lieu de 'styleUrl'
 })
+
+
 export class NavComponent {
   constructor(private themeService: ThemeService) { }
   isMenuOpen: boolean = false;
@@ -39,4 +41,5 @@ export class NavComponent {
   toggleTheme(): void {
     this.themeService.toggleDarkTheme();
   }
+  
 }
