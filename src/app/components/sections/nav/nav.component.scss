@@ -1,5 +1,3 @@
-@import url("../../../../assets/font/acid-grotesk/stylesheet.css");
-
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +5,8 @@
 }
 
 // ?VARIABLES
-$bold-acid-grotesk: "acid_groteskbold";
-$normal-acid-grotesk: "acid_grotesknormal";
-$regular-acid-grotesk: "acid_groteskregular";
-$medium-acid-grotesk: "acid_groteskmedium";
-$light-acid-grotesk: "acid_grotesklight";
-$extra-light-acid-grotesk: "acid_groteskextra_light";
-$thin-acid-grotesk: "acid_groteskthin";
+$acid-grotesk: "FFF Acid Grotesk";
+$culture: "Culture";
 // !COLOR
 $grey-black: #202020;
 $red-color: #dc2323;
@@ -38,19 +31,26 @@ a {
   padding: 16px 0px 10px 0px;
 }
 
+.header{
+  margin-top: 20px;
+}
+
+
 .nav {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin: 0px 24px 0px 24px;
 }
 
 .nav__link {
   color: #000;
-  font-family: $medium-acid-grotesk;
+  font-family: $acid-grotesk;
   font-size: 19px;
+  font-weight: 400;
 }
+
 
 .nav__close,
 .nav__toggle,
@@ -96,12 +96,12 @@ label:after {
   transition: 0.3s !important;
 }
 
-input:checked + label {
+input:checked+label {
   background: transparent;
   border: 1px solid $white-color;
 }
 
-input:checked + label:after {
+input:checked+label:after {
   left: calc(100% - 0px);
   transform: translateX(-100%);
 }
@@ -124,11 +124,13 @@ label:active:after {
 .icons-nav {
   width: 19px;
   color: $grey-black;
+  margin-bottom: 2px;
 }
 
 .nav__link {
   display: inline-flex;
   gap: 8px;
+  align-items: center;
 }
 
 .nav__item {
@@ -142,6 +144,7 @@ label:active:after {
 
 .nav__menu {
   width: 100%;
+ transition: width 0.2s ease;
 }
 
 hr {
@@ -164,7 +167,7 @@ hr {
     position: fixed;
     top: 0;
     right: -100%;
-    background-color: transparent;
+    background-color: #F4F9FF;
     width: 70%;
     height: 100%;
     // box-shadow: 2px 0 12px hsla(0, 0%, 0%, 0.2);
@@ -192,8 +195,12 @@ hr {
 
 .nav__close {
   position: absolute;
-  top: 1.5rem;
+  top: 2.3rem;
   right: 1.5rem;
+}
+
+.nav__close i {
+  font-size: 25px;
 }
 
 .nav__list {
@@ -239,43 +246,47 @@ hr {
     background-color: transparent;
     padding: 0px;
   }
+
   .nav__item:nth-child(1) {
     border-radius: 28px 0px 0px 28px;
   }
+
   .nav__item:nth-child(5) {
     border-radius: 0px 28px 28px 0px;
   }
 
-  
 
-.nav__item:hover {
-  background-color: $grey-black;
-  transition: background ease-in 0.3s;
-  cursor: pointer;
 
-  .nav__link {
-    color: $soft-blue;
-    transition: color ease-in 0.3s;
+  .nav__item:hover {
+    background-color: $grey-black;
+    transition: background ease-in 0.3s;
+    cursor: pointer;
+
+    .nav__link {
+      color: $soft-blue;
+      transition: color ease-in 0.3s;
+    }
+
+    .icons-nav {
+      color: $soft-blue;
+      transition: color ease-in 0.3s;
+    }
+
+    label:after {
+      background: $soft-blue;
+      transition: 0.3s;
+    }
+
+    label {
+      border: 1px solid $soft-blue;
+    }
   }
 
-  .icons-nav {
-    color: $soft-blue;
-    transition: color ease-in 0.3s;
-  }
-
-  label:after {
-    background: $soft-blue;
-    transition: 0.3s;
-  }
-
-  label {
-    border: 1px solid $soft-blue;
+  .header{
+    margin-top: 40px;
   }
 }
-}
 
-@media screen and (min-width: 1368px) {
-}
+@media screen and (min-width: 1368px) {}
 
-@media screen and (min-width: 1760px) {
-}
+@media screen and (min-width: 1760px) {}

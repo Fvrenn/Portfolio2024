@@ -1,8 +1,16 @@
+@import url("assets/font/acid-grotesk/stylesheet.css");
+@import url("assets/font/culture/stylesheet.css");
 // !COLOR
 $grey-black: #202020;
 $red-color: #dc2323;
 $white-color: #fff;
 $dark-mod-blue: #e3f7f7;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 // e3f7f7
 body {
@@ -39,6 +47,21 @@ body.dark-theme .icons-nav{
     transition: color linear 0.3s;
 }
 
+body.dark-theme .nom h2{
+    color: $dark-mod-blue !important;
+    transition: color linear 0.3s;
+}
+
+body.dark-theme .nom h1{
+    color: $dark-mod-blue !important;
+    transition: color linear 0.3s;
+}
+
+body.dark-theme .para p{
+    color: $dark-mod-blue !important;
+    transition: color linear 0.3s;
+}
+
 
 
 
@@ -49,6 +72,8 @@ body.dark-theme .icons-nav{
         border: 1px solid $dark-mod-blue !important;
         transition: border linear 0.3s;
         transition: right 0.4s;
+        background-color: #0b0a0a;
+        transition: background all linear 0.1s;
     }
 
     body.dark-theme .nav-btm {
