@@ -1,0 +1,86 @@
+$acid-grotesk: "FFF Acid Grotesk";
+$culture: "Culture";
+
+// !COLOR
+$grey-black: #202020;
+$red-color: #ef233c;
+$white-color: #fff;
+$soft-blue: #e3f7f7;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.accordion {
+  max-width: 530px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+
+}
+.accordion .accordion-content {
+  margin-top: 10px;
+  overflow: hidden;
+  padding-top: 14px;
+}
+
+.border-grey {
+  width: 100%;
+  height: 1.9px !important;
+  background-color: $grey-black;
+  position: relative;
+}
+
+.border-red {
+  height: 1.9px !important;
+  background-color: red;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.open .border-red{
+  width: 100% !important;
+  transition: width 0.8s ease-in-out;
+}
+
+.accordion-content.open {
+  padding-bottom: 10px;
+}
+.accordion-content header {
+  display: flex;
+  min-height: 50px;
+  padding: 0 15px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease-out;
+  margin-top: 13px;
+}
+.accordion-content.open header {
+  min-height: 35px;
+}
+
+.accordion-content.open p {
+  height: 80px;
+  margin-top: 1rem;
+}
+.accordion-content header .title {
+  font-size: 26px;
+  font-weight: 900;
+  color: $grey-black;
+  font-family: $culture;
+}
+.accordion-content .description {
+  height: 0;
+  font-size: 1rem;
+  color: $grey-black;
+  font-weight: 500;
+  padding: 0 15px;
+  transition: all 0.2s ease-out;
+  font-family: $acid-grotesk;
+  line-height: 23px;
+}

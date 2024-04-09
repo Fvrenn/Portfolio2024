@@ -10,6 +10,8 @@ import { ProjectComponent } from './components/sections/project/project.componen
 import { ContactComponent } from './components/sections/contact/contact.component';
 import { FooterComponent } from './components/sections/footer/footer.component';
 import { InfiniteScrollingTextComponent } from './components/modules/infinite-scrolling-text/infinite-scrolling-text.component';
+import { AccordingComponent } from './components/modules/according/according.component';
+import { BadgeComponent } from './components/modules/badge/badge.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { InfiniteScrollingTextComponent } from './components/modules/infinite-sc
     ProjectComponent,
     ContactComponent,
     FooterComponent,
-    InfiniteScrollingTextComponent
+    InfiniteScrollingTextComponent,
+    AccordingComponent,
+    BadgeComponent
   ],
   imports: [
     BrowserModule,
