@@ -17,12 +17,11 @@ $soft-blue: #e3f7f7;
   width: 100%;
   margin: 0 auto;
   padding: 15px;
-
 }
+
 .accordion .accordion-content {
-  margin-top: 10px;
+  margin-top: 24px;
   overflow: hidden;
-  padding-top: 14px;
 }
 
 .border-grey {
@@ -42,7 +41,7 @@ $soft-blue: #e3f7f7;
   right: auto;
 }
 
-.open .border-red{
+.open .border-red {
   width: 100% !important;
   transition: width 0.8s ease-in-out;
 }
@@ -53,7 +52,7 @@ $soft-blue: #e3f7f7;
 .accordion-content header {
   display: flex;
   min-height: 50px;
-  padding: 0 15px;
+  padding: 0 3px;
   cursor: pointer;
   align-items: center;
   justify-content: space-between;
@@ -64,9 +63,13 @@ $soft-blue: #e3f7f7;
   min-height: 35px;
 }
 
+.accordion-content p {
+  opacity: 0;
+}
 .accordion-content.open p {
   height: 80px;
   margin-top: 1rem;
+  opacity: 1;
 }
 .accordion-content header .title {
   font-size: 26px;
@@ -83,4 +86,89 @@ $soft-blue: #e3f7f7;
   transition: all 0.2s ease-out;
   font-family: $acid-grotesk;
   line-height: 23px;
+}
+
+// PHOTO
+
+.photo-container {
+  display: none;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1540px;
+}
+.photo {
+  width: 546px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 35px;
+}
+@media screen and (min-width: 700px) {
+  .accordion-content header .title {
+    font-size: 31px;
+    font-weight: 900;
+  }
+
+  .accordion {
+    max-width: 687px;
+  }
+
+  .accordion .accordion-content {
+    margin-top: 42px;
+  }
+
+  .accordion-content .description {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1069px) {
+  .photo-container {
+    display: block;
+  }
+
+  .accordion {
+    margin: 0;
+  }
+
+  .container {
+    margin: 0 40px;
+  }
+
+  .accordion .accordion-content {
+    margin-top: 47px;
+  }
+
+  .accordion-content .description {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .container {
+    margin: 0 auto;
+  }
+  .accordion-content .description {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .accordion-content header .title {
+    font-size: 36px;
+  }
+
+  .accordion {
+    max-width: 687px;
+  }
+
+  .photo {
+    width: 706px;
+    height: 452px;
+    object-fit: cover;
+    border-radius: 41px;
+  }
+
+  .accordion .accordion-content {
+    margin-top: 56px;
+  }
 }

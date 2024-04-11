@@ -67,6 +67,19 @@ body.dark-theme .txt{
     transition: color linear 0.3s;
 }
 
+body.dark-theme .border-grey{
+    background-color: $dark-mod-blue !important;
+    transition: background-color linear 0.3s;
+}
+body.dark-theme .title{
+    color: $dark-mod-blue !important;
+    transition: color linear 0.3s;
+}
+body.dark-theme .accordion-content .description{
+    color: $dark-mod-blue !important;
+    transition: color linear 0.3s;
+}
+
 
 
 

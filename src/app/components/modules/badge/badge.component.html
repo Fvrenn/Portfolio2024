@@ -1,1 +1,7 @@
-<p>badge works!</p>
+<div class="container">
+    <div *ngFor="let item of badgeListe">
+        <div class="container-logo" [style.backgroundColor]="item.backgroundColor">
+            <img [src]="item.logoPath" alt="Logo">
+        </div>
+    </div>
+</div>

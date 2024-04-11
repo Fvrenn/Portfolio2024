@@ -1,0 +1,46 @@
+[
+    {
+        "backgroundColor": "#ff0000",
+        "logoPath": "../../../../assets/icons/badge/angular_solidBlack 1.svg"
+    },
+    {
+        "backgroundColor": "#2962E9",
+        "logoPath": "../../../../assets/icons/badge/css-3-_1_ 1.svg"
+    },
+    {
+        "backgroundColor": "#E96228",
+        "logoPath": "../../../../assets/icons/badge/html-_1_ 1.svg"
+    },
+    {
+        "backgroundColor": "#F7D724",
+        "logoPath": "../../../../assets/icons/badge/script-java 1.svg"
+    },
+    {
+        "backgroundColor": "#F05132",
+        "logoPath": "../../../../assets/icons/badge/Git_icon.svg 1.svg"
+    },
+    {
+        "backgroundColor": "#001E36",
+        "logoPath": "../../../../assets/icons/badge/adobe-photoshop 1.svg"
+    },
+    {
+        "backgroundColor": "#310000",
+        "logoPath": "../../../../assets/icons/badge/adobe-illustrator 1.svg"
+    },
+    {   
+        "backgroundColor": "#47021E",
+        "logoPath": "../../../../assets/icons/badge/adobe-indesign 1.svg"
+    },
+    {
+        "backgroundColor": "#000058",
+        "logoPath": "../../../../assets/icons/badge/premiere-pro 1.svg"
+    },
+    {
+        "backgroundColor": "#000058",
+        "logoPath": "../../../../assets/icons/badge/adobe-after-effects 1.svg"
+    },
+    {
+        "backgroundColor": "#1D1D1D",
+        "logoPath": "../../../../assets/icons/badge/figma-svgrepo-com 1.svg"
+    }
+]
