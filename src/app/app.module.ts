@@ -12,6 +12,7 @@ import { FooterComponent } from './components/sections/footer/footer.component';
 import { InfiniteScrollingTextComponent } from './components/modules/infinite-scrolling-text/infinite-scrolling-text.component';
 import { AccordingComponent } from './components/modules/according/according.component';
 import { BadgeComponent } from './components/modules/badge/badge.component';
+import { ProjetSiteComponent } from './components/modules/projet-site/projet-site.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BadgeComponent } from './components/modules/badge/badge.component';
     FooterComponent,
     InfiniteScrollingTextComponent,
     AccordingComponent,
-    BadgeComponent
+    BadgeComponent,
+    ProjetSiteComponent
   ],
   imports: [
     BrowserModule,
