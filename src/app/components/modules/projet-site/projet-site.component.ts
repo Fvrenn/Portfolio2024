@@ -8,7 +8,7 @@ import card from './cardProjet.json'
 })
 export class ProjetSiteComponent implements AfterViewInit {
 
-  cardListe: { nomProjet: string, date: string, descriptionProjet: string, explicationTecno: string, videoFond: string, backgroundColor: string, }[] = card;
+  cardListe: { nomProjet: string, date: string, descriptionProjet: string, explicationTecno: string, videoFond: string, backgroundColor: string, colortexte: string, }[] = card;
 
   constructor() { }
 

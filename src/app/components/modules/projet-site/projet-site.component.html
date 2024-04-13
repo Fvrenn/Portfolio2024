@@ -1,10 +1,10 @@
 <div class="section-container">
-    <div class="container" *ngFor="let item of cardListe">
+    <div class="container" *ngFor="let item of cardListe.slice(0, 3)">
         <div class="card-site" (mouseenter)="playVideo(myVideo)" (mouseleave)="stopVideo(myVideo)">
             <div class="header">
                 <div class="header-txt" [style.backgroundColor]="item.backgroundColor">
-                    <h5>{{item.nomProjet}}</h5>
-                    <h6>{{item.date}}</h6>
+                    <h5 [style.color]="item.colortexte">{{item.nomProjet}}</h5>
+                    <h6 [style.color]="item.colortexte">{{item.date}}</h6>
                 </div>
             </div>
             <div class="content-container">

@@ -4,16 +4,18 @@
         "date": "2024",
         "descriptionProjet": "Site de vente de sushi",
         "explicationTecno": "Developement Web, Angular",
-        "videoFond": "../../../../assets/img/videoPreview-card/Introducing Microsoft Loop.mp4",
-        "backgroundColor": "#f4f9ff"
+        "videoFond": "../../../../assets/img/videoPreview-card/sushi-video-track.mp4",
+        "backgroundColor": "#dad1c8",
+        "colortexte": "#202020"
     },
     {
         "nomProjet": "Tatoo Samon",
         "date": "2023",
         "descriptionProjet": "Landing Page",
         "explicationTecno": "Developement Web, HTML, CSS, JS",
-        "videoFond": "../../../../assets/img/videoPreview-card/Introducing Microsoft Loop.mp4",
-        "backgroundColor": "#f4f9ff"
+        "videoFond": "../../../../assets/img/videoPreview-card/tatto.mp4",
+        "backgroundColor": "#31291e",
+        "colortexte": "white"
     },
     {
         "nomProjet": "Cosmos",
@@ -21,7 +23,8 @@
         "descriptionProjet": "Landing Page",
         "explicationTecno": "Developement Web, HTML, CSS, JS",
         "videoFond": "../../../../assets/img/videoPreview-card/Introducing Microsoft Loop.mp4",
-        "backgroundColor": "#f4f9ff"
+        "backgroundColor": "#afcbec",
+        "colortexte": "#202020"
     },
     {
         "nomProjet": "Cosmos",
@@ -29,6 +32,7 @@
         "descriptionProjet": "Landing Page",
         "explicationTecno": "Developement Web, HTML, CSS, JS",
         "videoFond": "../../../../assets/img/videoPreview-card/Introducing Microsoft Loop.mp4",
-        "backgroundColor": "#f4f9ff"
+        "backgroundColor": "#afcbec",
+        "colortexte": "#202020"
     }
 ]
