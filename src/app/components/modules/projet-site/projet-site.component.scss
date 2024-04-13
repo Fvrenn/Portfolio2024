@@ -11,11 +11,13 @@ $soft-blue: #e3f7f7;
   display: flex;
   align-items: center;
   gap: 23px;
+  transition: all 0.3s ease-in-out;
+  margin: 0 30px;
+  flex-direction: column;
 }
 .container {
-  // max-width: 591px;
+  max-width: 591px;
   height: 591px;
-  flex: 1;
   transition: flex 0.3s ease-in-out;
 }
 .card-site {
@@ -25,7 +27,9 @@ $soft-blue: #e3f7f7;
   height: 591px; /* Adjust this value to your preference */
   overflow: hidden; /* Hide the overflowing parts of the video */
 }
-
+.header{
+  cursor: pointer;
+}
 .header-txt {
   display: flex;
   justify-content: space-between;
@@ -36,13 +40,13 @@ $soft-blue: #e3f7f7;
 }
 
 .header-txt h5 {
-  font-size: 19px;
+  font-size: 15px;
   font-family: $acid-grotesk;
   font-weight: 600;
   color: $grey-black;
 }
 .header-txt h6 {
-  font-size: 19px;
+  font-size: 15px;
   font-family: $culture;
   font-weight: 900;
   color: $grey-black;
@@ -59,15 +63,18 @@ $soft-blue: #e3f7f7;
   bottom: 24px;
   left: 24px;
 }
+.txt-card{
+  max-width: 425px;
+}
 .info-card h5 {
-  font-size: 31px;
+  font-size: 25px;
   font-family: $acid-grotesk;
   font-weight: 500;
   color: $grey-black;
 }
 
 .info-card h6 {
-  font-size: 31px;
+  font-size: 25px;
   font-family: $culture;
   font-weight: 900;
   color: $grey-black;
@@ -76,7 +83,7 @@ $soft-blue: #e3f7f7;
 .photo-card {
   position: relative;
 }
-.photo-card:hover {
+.card-site:hover {
   .overlay {
     background-color: rgba(244, 249, 255, 0);
   }
@@ -99,17 +106,65 @@ $soft-blue: #e3f7f7;
   border-radius: 16px;
 }
 
-.section-container {
-  transition: all 0.3s ease-in-out;
-}
-
 .card-site {
   transition: all 0.3s ease-in-out;
 }
-.container:has(.card-site:hover) {
-  width: 1200px;
+
+@media screen and (min-width: 800px) {
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    height: 591px;
+    flex: 1;
+    transition: flex 0.3s ease-in-out;
+  }
+  .section-container {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    transition: all 0.3s ease-in-out;
+    margin: 0 30px;
+    flex-direction: row;
+  }
+  .container:hover {
+    flex: 1.4;
+  }
+  
+  .container:has(.card-site:hover) {
+    width: 1200px;
+  }
+  .header-txt h5 {
+    font-size: 19px;
+    font-family: $acid-grotesk;
+    font-weight: 600;
+    color: $grey-black;
+  }
+
+  .header-txt h6 {
+    font-size: 19px;
+    font-family: $culture;
+    font-weight: 900;
+    color: $grey-black;
+  }
+
+  .info-card h5 {
+    font-size: 31px;
+    font-family: $acid-grotesk;
+    font-weight: 500;
+    color: $grey-black;
+  }
+
+  .info-card h6 {
+    font-size: 31px;
+    font-family: $culture;
+    font-weight: 900;
+    color: $grey-black;
+  }
 }
 
-.container:hover {
-  flex: 1.5;
+@media screen and (min-width: 1824px) {
+  .section-container {
+    margin: 0 auto;
+  }
 }

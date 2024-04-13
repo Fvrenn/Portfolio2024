@@ -1,0 +1,34 @@
+[
+    {
+        "nomProjet": "Hako Shi",
+        "date": "2024",
+        "descriptionProjet": "Site de vente de sushi",
+        "explicationTecno": "Developement Web, Angular",
+        "videoFond": "../../../../assets/img/videoPreview-card/Introducing Microsoft Loop.mp4",
+        "backgroundColor": "#f4f9ff"
+    },
+    {
+        "nomProjet": "Tatoo Samon",
+        "date": "2023",
+        "descriptionProjet": "Landing Page",
+        "explicationTecno": "Developement Web, HTML, CSS, JS",
+        "videoFond": "../../../../assets/img/videoPreview-card/Introducing Microsoft Loop.mp4",
+        "backgroundColor": "#f4f9ff"
+    },
+    {
+        "nomProjet": "Cosmos",
+        "date": "2023",
+        "descriptionProjet": "Landing Page",
+        "explicationTecno": "Developement Web, HTML, CSS, JS",
+        "videoFond": "../../../../assets/img/videoPreview-card/Introducing Microsoft Loop.mp4",
+        "backgroundColor": "#f4f9ff"
+    },
+    {
+        "nomProjet": "Cosmos",
+        "date": "2023",
+        "descriptionProjet": "Landing Page",
+        "explicationTecno": "Developement Web, HTML, CSS, JS",
+        "videoFond": "../../../../assets/img/videoPreview-card/Introducing Microsoft Loop.mp4",
+        "backgroundColor": "#f4f9ff"
+    }
+]
