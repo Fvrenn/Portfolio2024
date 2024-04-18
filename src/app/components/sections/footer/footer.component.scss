@@ -1,0 +1,33 @@
+$acid-grotesk: "FFF Acid Grotesk";
+$culture: "Culture";
+
+// !COLOR
+$grey-black: #202020;
+$red-color: #dc2323;
+$white-color: #fff;
+$soft-blue: #e3f7f7;
+
+.item-div-footer{
+    border-top: solid 1px $grey-black;
+    // border-bottom: solid 1px $grey-black;
+
+}
+.item-div-footer a, .item-footer {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: $acid-grotesk;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 65.27%;
+    margin: 0 auto;
+    border-left: solid 1px $grey-black;
+    border-right: solid 1px $grey-black;
+    padding: 14px 6px;
+    overflow-wrap: break-word;
+}
+.item-div-footer svg{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 3px;
+}

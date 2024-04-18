@@ -7,7 +7,8 @@ import card from './cardProjet.json'
   styleUrls: ['./projet-site.component.scss']
 })
 export class ProjetSiteComponent implements AfterViewInit {
-
+  showGraphique = false;
+  activeButton = 'site-web';
   cardListe: { nomProjet: string, date: string, descriptionProjet: string, explicationTecno: string, videoFond: string, backgroundColor: string, colortexte: string, }[] = card;
 
   constructor() { }
@@ -37,5 +38,15 @@ export class ProjetSiteComponent implements AfterViewInit {
 
   stopVideo(video: HTMLVideoElement) {
     video.pause();
+  }
+
+  showSiteWeb() {
+    this.showGraphique = false;
+    this.activeButton = 'site-web';
+  }
+
+  showCreationGraphique() {
+    this.showGraphique = true;
+    this.activeButton = 'graphisme';
   }
 }

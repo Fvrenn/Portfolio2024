@@ -1,4 +1,9 @@
-<div class="section-container">
+
+<div class="btn-section">
+    <button class="site-web" [class.active]="activeButton === 'site-web'" (click)="showSiteWeb()">Site Web</button>
+    <button class="graphisme" [class.active]="activeButton === 'graphisme'" (click)="showCreationGraphique()">Creation graphique</button>
+</div>
+<div class="section-container site" *ngIf="!showGraphique">
     <div class="container" *ngFor="let item of cardListe.slice(0, 3)">
         <div class="card-site" (mouseenter)="playVideo(myVideo)" (mouseleave)="stopVideo(myVideo)">
             <div class="header">
@@ -26,3 +31,5 @@
         </div>
     </div>
 </div>
+
+<app-projet-autre class="graphisme" *ngIf="showGraphique"></app-projet-autre>

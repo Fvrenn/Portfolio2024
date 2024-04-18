@@ -6,143 +6,180 @@ $red-color: #dc2323;
 $white-color: #fff;
 $dark-mod-blue: #e3f7f7;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 // e3f7f7
 body {
-    background-color: #F4F9FF;
-    background-color: all linear 0.1s;
+  background-color: #f4f9ff;
+  background-color: all linear 0.1s;
 }
 
 body.dark-theme {
-    background-color: #0b0a0a;
-    color: #fff;
-    transition: background-color linear 0.3s;
+  background-color: #0b0a0a;
+  color: #fff;
+  transition: background-color linear 0.3s;
 }
 
 body.dark-theme label {
-    border-color: $dark-mod-blue;
-    transition: border-color linear 0.3s;
+  border-color: $dark-mod-blue;
+  transition: border-color linear 0.3s;
 }
 
 body.dark-theme .nav__link {
-    color: $dark-mod-blue;
-    transition: color linear 0.3s;
+  color: $dark-mod-blue;
+  transition: color linear 0.3s;
 }
-
 
 body.dark-theme label:after {
-    background: $dark-mod-blue ;
-    transition: background linear 0.3s;
+  background: $dark-mod-blue;
+  transition: background linear 0.3s;
 }
 
-
-
-body.dark-theme .icons-nav{
-    color: $dark-mod-blue ;
-    transition: color linear 0.3s;
+body.dark-theme .icons-nav {
+  color: $dark-mod-blue;
+  transition: color linear 0.3s;
 }
 
-body.dark-theme .nom h2{
-    color: $dark-mod-blue !important;
-    transition: color linear 0.3s;
+body.dark-theme .nom h2 {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s;
 }
 
-body.dark-theme .nom h1{
-    color: $dark-mod-blue !important;
-    transition: color linear 0.3s;
+body.dark-theme .nom h1 {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s;
 }
 
-body.dark-theme .para p{
-    color: $dark-mod-blue !important;
-    transition: color linear 0.3s;
+body.dark-theme .para p {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s;
 }
 
-body.dark-theme .txt{
-    color: $dark-mod-blue !important;
-    transition: color linear 0.3s;
+body.dark-theme .txt {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s;
 }
 
-body.dark-theme .border-grey{
-    background-color: $dark-mod-blue !important;
-    transition: background-color linear 0.3s;
+body.dark-theme .border-grey {
+  background-color: $dark-mod-blue !important;
+  transition: background-color linear 0.3s;
 }
-body.dark-theme .title{
-    color: $dark-mod-blue !important;
-    transition: color linear 0.3s;
+body.dark-theme .title {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s;
 }
-body.dark-theme .accordion-content .description{
-    color: $dark-mod-blue !important;
-    transition: color linear 0.3s;
+body.dark-theme .accordion-content .description {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s;
 }
 
+body.dark-theme .btn-section button {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s;
+  transition: border linear 0.3s;
+  border: $dark-mod-blue solid 1px !important;
+}
 
+body.dark-theme .btn-section button.active {
+  color: $grey-black !important;
+  transition: color linear 0.3s !important;
+  transition: background-color linear 0.3s !important;
+  background-color: $dark-mod-blue !important;
+}
 
+body.dark-theme .form-contact label {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s !important;
+}
+body.dark-theme .form-contact input {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s !important;
+  transition: border linear 0.3s !important;
+  border: solid 2px $dark-mod-blue !important;
+}
+body.dark-theme .form-contact  textarea {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s !important;
+  transition: border linear 0.3s !important;
+  border: solid 2px $dark-mod-blue !important;
+}
+
+body.dark-theme .form-contact  input::placeholder {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s !important;
+}
+body.dark-theme .form-contact  textarea::placeholder {
+  color: $dark-mod-blue !important;
+  transition: color linear 0.3s !important;
+}
+
+body.dark-theme .form-contact  button {
+  background-color: $dark-mod-blue !important;
+  transition: background-color linear 0.3s !important;
+  color: $grey-black !important;
+}
 
 
 
 @media screen and (max-width: 851px) {
-    body.dark-theme .nav__menu {
-        border: 1px solid $dark-mod-blue !important;
-        transition: border linear 0.3s;
-        transition: right 0.4s;
-        background-color: #0b0a0a;
-        transition: background all linear 0.1s;
-    }
+  body.dark-theme .nav__menu {
+    border: 1px solid $dark-mod-blue !important;
+    transition: border linear 0.3s;
+    transition: right 0.4s;
+    background-color: #0b0a0a;
+    transition: background all linear 0.1s;
+  }
 
-    body.dark-theme .nav-btm {
-        border-bottom: $dark-mod-blue !important;
-        transition: border linear 0.3s;
-    }
+  body.dark-theme .nav-btm {
+    border-bottom: $dark-mod-blue !important;
+    transition: border linear 0.3s;
+  }
 
-    body.dark-theme .nav__item {
-        border-bottom: 0.5px solid $dark-mod-blue !important;
-        transition: border linear 0.3s;
-    }
-    body.dark-theme .dark-mod-togled {
-        border-top: 1px solid $dark-mod-blue !important;
-        transition: border linear 0.3s;
-    }
-
-   
+  body.dark-theme .nav__item {
+    border-bottom: 0.5px solid $dark-mod-blue !important;
+    transition: border linear 0.3s;
+  }
+  body.dark-theme .dark-mod-togled {
+    border-top: 1px solid $dark-mod-blue !important;
+    transition: border linear 0.3s;
+  }
 }
 
 @media screen and (min-width: 851px) {
-    body.dark-theme .nav {
-        border: 1px solid $dark-mod-blue !important;
-        transition: border linear 0.3s;
-    }
-    body.dark-theme .nav__item:nth-child(n+1):nth-child(-n+4) {
-        border-right: solid 1px $dark-mod-blue !important;
-        transition: border-right linear 0.3s;
+  body.dark-theme .nav {
+    border: 1px solid $dark-mod-blue !important;
+    transition: border linear 0.3s;
+  }
+  body.dark-theme .nav__item:nth-child(n + 1):nth-child(-n + 4) {
+    border-right: solid 1px $dark-mod-blue !important;
+    transition: border-right linear 0.3s;
+  }
+
+  body.dark-theme .nav__item:hover {
+    background: $dark-mod-blue;
+    transition: background ease-in 0.3s !important;
+
+    .nav__link {
+      color: $grey-black !important;
+      transition: color ease-in 0.3s;
     }
 
-    body.dark-theme .nav__item:hover {
-        background: $dark-mod-blue;
-        transition: background ease-in 0.3s !important;
-      
-        .nav__link {
-          color: $grey-black !important;
-          transition: color ease-in 0.3s;
-        }
-      
-         .icons-nav {
-          color: $grey-black !important;
-          transition: color ease-in 0.3s ;
-        }
-      
-         label:after {
-          background: $grey-black !important;
-          transition: 0.3s;
-        }
-      
-         label {
-          border: 1px solid $grey-black !important;
-        }
-      }
+    .icons-nav {
+      color: $grey-black !important;
+      transition: color ease-in 0.3s;
+    }
+
+    label:after {
+      background: $grey-black !important;
+      transition: 0.3s;
+    }
+
+    label {
+      border: 1px solid $grey-black !important;
+    }
+  }
 }
-

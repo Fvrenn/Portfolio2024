@@ -62,15 +62,12 @@ $soft-blue: #e3f7f7;
   color: $grey-black !important;
 }
 
-.card-site:hover{
+.card-site:hover {
   video {
-    filter: none ;
+    filter: none;
     opacity: 1;
   }
-
-  
 }
-
 
 .header-txt h5 {
   font-size: 15px;
@@ -103,8 +100,15 @@ $soft-blue: #e3f7f7;
   max-width: 425px;
 }
 
-.section-container .container:nth-child(2):hover{
-  .info-card h5,.info-card h6{
+.section-container .container:nth-child(2):hover {
+  .info-card h5,
+  .info-card h6 {
+    color: $white-color;
+  }
+}
+.section-container .container:nth-child(1):hover {
+  .info-card h5,
+  .info-card h6 {
     color: $white-color;
   }
 }
@@ -145,7 +149,7 @@ $soft-blue: #e3f7f7;
 }
 
 video {
-  filter: grayscale(1) ;
+  filter: grayscale(1);
   opacity: 0.1;
   transition: all 0.3s ease-in-out;
 }
@@ -156,12 +160,44 @@ video {
   object-fit: cover;
   border-radius: 16px;
 }
+.btn-section {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  margin: 0px 0px 39px 30px ;
+}
+.btn-section button {
+  font-size: 24px;
+  color: $grey-black;
+  font-family: $culture;
+  font-weight: 900;
+  padding: 6px 18px;
+  border-radius: 13px;
+  background-color: transparent;
+  cursor: pointer;
+  border:  $grey-black solid 1px;
+}
+
+.btn-section button.active {
+  background-color: $grey-black;
+  color: $white-color;
+}
 
 .card-site {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 800px) {}
+@media screen and (min-width: 800px) {
+  .btn-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin: 0px 0px 39px 0px ;
+    justify-content: center;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .container {
@@ -214,6 +250,16 @@ video {
     font-family: $culture;
     font-weight: 900;
     color: $grey-black;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .btn-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: start;
+    margin: 0px 0px 39px 30px ;
+    justify-content: start;
   }
 }
 
