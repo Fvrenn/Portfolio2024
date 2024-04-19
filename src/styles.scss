@@ -101,30 +101,52 @@ body.dark-theme .form-contact input {
   transition: border linear 0.3s !important;
   border: solid 2px $dark-mod-blue !important;
 }
-body.dark-theme .form-contact  textarea {
+body.dark-theme .form-contact textarea {
   color: $dark-mod-blue !important;
   transition: color linear 0.3s !important;
   transition: border linear 0.3s !important;
   border: solid 2px $dark-mod-blue !important;
 }
 
-body.dark-theme .form-contact  input::placeholder {
+body.dark-theme .form-contact input::placeholder {
   color: $dark-mod-blue !important;
   transition: color linear 0.3s !important;
 }
-body.dark-theme .form-contact  textarea::placeholder {
+body.dark-theme .form-contact textarea::placeholder {
   color: $dark-mod-blue !important;
   transition: color linear 0.3s !important;
 }
 
-body.dark-theme .form-contact  button {
+body.dark-theme .form-contact button {
   background-color: $dark-mod-blue !important;
   transition: background-color linear 0.3s !important;
   color: $grey-black !important;
 }
 
+body.dark-theme .item-div-footer {
+  border-top-color:  $dark-mod-blue;
+}
 
+body.dark-theme .item-div-footer a {
+  border-left-color:  $dark-mod-blue !important;
+  border-right-color:  $dark-mod-blue !important;
+}
+body.dark-theme .item-footer {
+  border-left-color:  $dark-mod-blue;
+  border-right-color:  $dark-mod-blue;
+}
 
+body.dark-theme .part2 {
+  border-bottom-color:  $dark-mod-blue;
+}
+
+body.dark-theme .eamil h6{
+  color: $dark-mod-blue !important;
+}
+body.dark-theme .texte-email-para p{
+  color: $dark-mod-blue !important;
+
+}
 @media screen and (max-width: 851px) {
   body.dark-theme .nav__menu {
     border: 1px solid $dark-mod-blue !important;
@@ -151,11 +173,11 @@ body.dark-theme .form-contact  button {
 
 @media screen and (min-width: 851px) {
   body.dark-theme .nav {
-    border: 1px solid $dark-mod-blue !important;
+    border-color: $dark-mod-blue !important;
     transition: border linear 0.3s;
   }
   body.dark-theme .nav__item:nth-child(n + 1):nth-child(-n + 4) {
-    border-right: solid 1px $dark-mod-blue !important;
+    border-right-color:  $dark-mod-blue !important;
     transition: border-right linear 0.3s;
   }
 
@@ -181,5 +203,43 @@ body.dark-theme .form-contact  button {
     label {
       border: 1px solid $grey-black !important;
     }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body.dark-theme .part1 .item-div-footer:nth-child(2) {
+    border-top-color: $dark-mod-blue !important;
+  }
+  body.dark-theme .part1 .item-div-footer:nth-child(3) {
+    border-top-color: $dark-mod-blue !important;
+  }
+  body.dark-theme .part1 .item-div-footer:nth-child(4) {
+    border-top-color: $dark-mod-blue !important;
+  }
+
+  body.dark-theme .part1 {
+    border-right-color: $dark-mod-blue;
+    border-top-color:  $dark-mod-blue;
+    border-bottom-color:  $dark-mod-blue;
+  }
+  body.dark-theme .part2 {
+    border-top-color: $dark-mod-blue;
+    border-bottom-color: $dark-mod-blue;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body.dark-theme .part1 {
+    border-left-color: $dark-mod-blue;
+  }
+  body.dark-theme .part3 {
+    border-right-color:  $dark-mod-blue;
+  }
+  body.dark-theme .part4 {
+    border-right-color:  $dark-mod-blue;
+  }
+  body.dark-theme footer {
+    border-top-color:$dark-mod-blue;
+    border-bottom-color:  $dark-mod-blue;
   }
 }
