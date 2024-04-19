@@ -1,5 +1,5 @@
 <div class="section-container">
-    <div class="container" *ngFor="let item of cardListe">
+    <div class="container" *ngFor="let item of cardListe | slice:0:3">
         <div class="card-site">
             <div class="content-container">
                 <div class="photo-card">
