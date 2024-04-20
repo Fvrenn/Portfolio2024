@@ -1,8 +1,5 @@
 <section id="about">
-
     <div class="container">
-
-
         <div class="accordion">
             <div class="accordion-content" *ngFor="let content of accordionContents; let i = index"
                 [ngClass]="{'open': i === currentIndex}">
@@ -14,7 +11,8 @@
                 </header>
                 <p class="description">
                     {{ content.description }}
-                    <app-badge *ngIf="i === accordionContents.length - 1 && i === currentIndex"></app-badge>
+                    <app-badge *ngIf="i === 1 && i === currentIndex"></app-badge>
+                    <app-experiences *ngIf="i === 2 && i === currentIndex"></app-experiences>
                 </p>
             </div>
         </div>

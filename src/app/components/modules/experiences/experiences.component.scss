@@ -1,0 +1,97 @@
+$acid-grotesk: "FFF Acid Grotesk";
+$culture: "Culture";
+
+// !COLOR
+$grey-black: #202020;
+$red-color: #dc2323;
+$white-color: #fff;
+$soft-blue: #e3f7f7;
+a{
+    text-decoration: none;
+
+}
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.container-experience {
+    display: flex;
+    align-items: baseline;
+    gap: 80px;
+}
+
+.date {
+    width: 132px;
+}
+
+.date h6 {
+    color: $grey-black;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $acid-grotesk;
+}
+
+.role-entreprise h5 {
+    font-size: 18px;
+    color: $grey-black;
+    font-weight: 600;
+    font-family: $acid-grotesk;
+}
+
+.nom-entreprise h6 {
+    color: $red-color;
+}
+
+.info-entreprise {
+    display: flex;
+    flex-direction: column;
+}
+
+.nom-entreprise a{
+    display: flex;
+    align-items: center;
+    // gap: 4px;
+    cursor: pointer;
+}
+
+.nom-entreprise svg {
+    width: 20px;
+    height: 20px;
+    color: $red-color;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nom-entreprise:hover {
+    svg {
+        transform: rotate(45deg);
+    }
+}
+
+.link {
+    color: $red-color;
+    text-decoration: none;
+    position: relative;
+    
+    &:after {
+        bottom: 1px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        background: $red-color;
+        opacity: 0.6;
+        transition: width 0.3s ease-in-out 0s, opacity 0.3s ease-in-out 0s;
+        width: 0;
+    }
+    
+    &:hover:after {
+        width: 100%;
+        opacity: 0.9;
+    }
+}
