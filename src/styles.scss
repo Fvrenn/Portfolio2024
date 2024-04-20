@@ -6,10 +6,16 @@ $red-color: #dc2323;
 $white-color: #fff;
 $dark-mod-blue: #e3f7f7;
 
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 // e3f7f7
@@ -145,7 +151,9 @@ body.dark-theme .eamil h6{
 }
 body.dark-theme .texte-email-para p{
   color: $dark-mod-blue !important;
-
+}
+body.dark-theme .nav__item .nav__link{
+  color: $dark-mod-blue !important;
 }
 @media screen and (max-width: 851px) {
   body.dark-theme .nav__menu {
