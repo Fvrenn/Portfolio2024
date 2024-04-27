@@ -73,5 +73,45 @@
         "TechnologiesUtilisees": [
             "HTML et CSS (SASS/SCSS) : Utilisés pour la conception et le style de l'interface utilisateur, en suivant les principes du design responsive pour une expérience multiplateforme."
         ]
+    },
+    {
+        "nomProjet": "Cosmos",
+        "date": "2023",
+        "descriptionProjet": "Landing Page",
+        "explicationTecno": "Developement Web, HTML, CSS, JS",
+        "videoFond": "../../../../assets/img/videoPreview-card/tablette.mp4",
+        "backgroundColor": "#A9C2CB",
+        "colortexte": "white",
+        "textHeader": "Landing page pour un site de voyage dans l'espace",
+        "image1": "../../../../assets/img/projet-detail/casmos/image1.png",
+        "video1": "../../../../assets/video-detail-projet/casomos/video1.mp4",
+        "DescriptionProjet": "L'objectif de ce projet était de réussir à coder une maquette de Giorgi Matsukatovi que j'ai trouvée sur Figma, et de la réaliser en adoptant une approche mobile-first afin de progresser dans ce domaine. https://www.figma.com/community/file/1282656375603110860",
+        "Objectifs": [
+            "S'entraîner à la conception responsive mobile first ",
+            "éussir à coder une maquette existante en la respectant à la perfection, jusqu'au dernier pixel."
+        ],
+        "TechnologiesUtilisees": [
+            "HTML et CSS (SASS/SCSS) : Utilisés pour la conception et le style de l'interface utilisateur, en suivant les principes du design responsive pour une expérience multiplateforme."
+        ]
+    },
+    {
+        "nomProjet": "Cosmos",
+        "date": "2023",
+        "descriptionProjet": "Landing Page",
+        "explicationTecno": "Developement Web, HTML, CSS, JS",
+        "videoFond": "../../../../assets/img/videoPreview-card/tablette.mp4",
+        "backgroundColor": "#A9C2CB",
+        "colortexte": "white",
+        "textHeader": "Landing page pour un site de voyage dans l'espace",
+        "image1": "../../../../assets/img/projet-detail/casmos/image1.png",
+        "video1": "../../../../assets/video-detail-projet/casomos/video1.mp4",
+        "DescriptionProjet": "L'objectif de ce projet était de réussir à coder une maquette de Giorgi Matsukatovi que j'ai trouvée sur Figma, et de la réaliser en adoptant une approche mobile-first afin de progresser dans ce domaine. https://www.figma.com/community/file/1282656375603110860",
+        "Objectifs": [
+            "S'entraîner à la conception responsive mobile first ",
+            "éussir à coder une maquette existante en la respectant à la perfection, jusqu'au dernier pixel."
+        ],
+        "TechnologiesUtilisees": [
+            "HTML et CSS (SASS/SCSS) : Utilisés pour la conception et le style de l'interface utilisateur, en suivant les principes du design responsive pour une expérience multiplateforme."
+        ]
     }
 ]
