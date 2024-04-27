@@ -7,9 +7,9 @@ import  {BadgeComponent} from '../badge/badge.component'
 })
 export class AccordingComponent {
   accordionContents = [
-    { title: 'Découvrez qui je suis', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim numquam voluptatem?' },
-    { title: 'Mes experiences', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim numquam voluptatem?' },
-    { title: 'Les outils et language que je maitrise', description: '' }
+    { title: 'Découvrez qui je suis', description: "Passionné par l'informatique et les défis qu'elle implique, je suis quelqu'un de dévoué. Mes compétences en relations humaines et en communication, combinées à ma formation, me permettent d'apporter une contribution appréciable à votre entreprise." },
+    { title: 'Les outils et language que je maitrise', description: '' },
+    { title: 'Mes experiences', description: '' }
 ];
 
 

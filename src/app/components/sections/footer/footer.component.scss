@@ -6,6 +6,13 @@ $grey-black: #202020;
 $red-color: #dc2323;
 $white-color: #fff;
 $soft-blue: #e3f7f7;
+a{
+  text-decoration: none;
+  color: none;
+}*
+.nav__link{
+  color: $grey-black;
+}
 
 footer {
   margin-top: 100px;
