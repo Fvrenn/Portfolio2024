@@ -14,11 +14,8 @@ import { AccordingComponent } from './components/modules/according/according.com
 import { BadgeComponent } from './components/modules/badge/badge.component';
 import { ProjetSiteComponent } from './components/modules/projet-site/projet-site.component';
 import { ProjetAutreComponent } from './components/modules/projet-autre/projet-autre.component';
-<<<<<<< HEAD
 import { DetailProjetComponent } from './components/modules/detail-projet/detail-projet.component';
-=======
 import { ExperiencesComponent } from './components/modules/experiences/experiences.component';
->>>>>>> d2912bc87c21a1de0a3c2af720ab867cdd500847
 
 @NgModule({
   declarations: [
@@ -34,11 +31,8 @@ import { ExperiencesComponent } from './components/modules/experiences/experienc
     BadgeComponent,
     ProjetSiteComponent,
     ProjetAutreComponent,
-<<<<<<< HEAD
-    DetailProjetComponent
-=======
+    DetailProjetComponent,
     ExperiencesComponent
->>>>>>> d2912bc87c21a1de0a3c2af720ab867cdd500847
   ],
   imports: [
     BrowserModule,
