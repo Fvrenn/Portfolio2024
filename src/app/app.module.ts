@@ -16,6 +16,7 @@ import { ProjetSiteComponent } from './components/modules/projet-site/projet-sit
 import { ProjetAutreComponent } from './components/modules/projet-autre/projet-autre.component';
 import { DetailProjetComponent } from './components/modules/detail-projet/detail-projet.component';
 import { ExperiencesComponent } from './components/modules/experiences/experiences.component';
+import { PageProjetComponent } from './components/modules/page-projet/page-projet.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ExperiencesComponent } from './components/modules/experiences/experienc
     ProjetSiteComponent,
     ProjetAutreComponent,
     DetailProjetComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    PageProjetComponent
   ],
   imports: [
     BrowserModule,

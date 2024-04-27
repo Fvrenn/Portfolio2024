@@ -9,7 +9,7 @@
         "colortexte": "#202020",
         "textHeader": "Site De Vente De Sushi",
         "image1": "../../../../assets/img/projet-detail/hakoshi/hero.png",
-        "image2": "../../../../assets/img/projet-detail/hakoshi/admin.png",
+        "image2": "",
         "video1": "../../../../assets/video-detail-projet/hakoshi/hakoshi-presentation.mp4",
         "DescriptionProjet": "Notre projet consistait à développer une application web de gestion de commandes pour un restaurant de sushi en ligne. L'objectif était de créer une plateforme conviviale qui permet aux clients de passer des commandes facilement et au personnel de gérer efficacement les commandes et les produits.",
         "Objectifs": [
@@ -41,7 +41,18 @@
         "explicationTecno": "Developement Web, HTML, CSS, JS",
         "videoFond": "../../../../assets/img/videoPreview-card/tatto.mp4",
         "backgroundColor": "#31291e",
-        "colortexte": "white"
+        "colortexte": "white",
+        "textHeader": "Landing page pour un salon de tatouage",
+        "image1": "../../../../assets/img/projet-detail/tatoo-samon/image1.png",
+        "video1": "../../../../assets/video-detail-projet/tatoo-salmon/video1.mp4",
+        "DescriptionProjet": "L'objectif de ce projet était de réussir à coder une maquette de Giorgi Matsukatovi que j'ai trouvée sur Figma, et de la réaliser en adoptant une approche mobile-first afin de progresser dans ce domaine. https://www.figma.com/community/file/1284453364746446139",
+        "Objectifs": [
+            "S'entraîner à la conception responsive mobile first ",
+            "éussir à coder une maquette existante en la respectant à la perfection, jusqu'au dernier pixel."
+        ],
+        "TechnologiesUtilisees": [
+            "HTML et CSS (SASS/SCSS) : Utilisés pour la conception et le style de l'interface utilisateur, en suivant les principes du design responsive pour une expérience multiplateforme."
+        ]
     },
     {
         "nomProjet": "Cosmos",
@@ -50,6 +61,17 @@
         "explicationTecno": "Developement Web, HTML, CSS, JS",
         "videoFond": "../../../../assets/img/videoPreview-card/tablette.mp4",
         "backgroundColor": "#A9C2CB",
-        "colortexte": "white"
+        "colortexte": "white",
+        "textHeader": "Landing page pour un site de voyage dans l'espace",
+        "image1": "../../../../assets/img/projet-detail/casmos/image1.png",
+        "video1": "../../../../assets/video-detail-projet/casomos/video1.mp4",
+        "DescriptionProjet": "L'objectif de ce projet était de réussir à coder une maquette de Giorgi Matsukatovi que j'ai trouvée sur Figma, et de la réaliser en adoptant une approche mobile-first afin de progresser dans ce domaine. https://www.figma.com/community/file/1282656375603110860",
+        "Objectifs": [
+            "S'entraîner à la conception responsive mobile first ",
+            "éussir à coder une maquette existante en la respectant à la perfection, jusqu'au dernier pixel."
+        ],
+        "TechnologiesUtilisees": [
+            "HTML et CSS (SASS/SCSS) : Utilisés pour la conception et le style de l'interface utilisateur, en suivant les principes du design responsive pour une expérience multiplateforme."
+        ]
     }
 ]
