@@ -9,7 +9,7 @@ import card from './cardProjet.json'
 export class ProjetSiteComponent implements AfterViewInit {
   showGraphique = false;
   activeButton = 'site-web';
-  cardListe: { nomProjet: string, date: string, descriptionProjet: string, explicationTecno: string, videoFond: string, backgroundColor: string, colortexte: string, }[] = card;
+  cardListe: { nomProjet: string, date: string, descriptionProjet: string, explicationTecno: string, videoFond: string, backgroundColor: string, colortexte: string, textHeader: string , image1: string, DescriptionProjet: string, Objectifs: string, TechnologiesUtilisees: string, FonctionnalitePrincipales: string, Rolesetresponsabilites: string, ResultatsObtenus: string}[] = card;
 
   constructor() { }
 

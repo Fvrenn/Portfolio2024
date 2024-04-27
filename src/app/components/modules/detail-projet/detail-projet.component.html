@@ -1,0 +1,109 @@
+<!-- <div *ngIf="projet">
+    <h2>{{ projet.textHeader }}</h2>
+    <p>Date : {{ projet.DescriptionProjet }}</p>
+    <p>Description : {{ projet.Objectifs }}</p>
+    <p>Description : {{ projet.TechnologiesUtilisees }}</p>
+    <p>Description : {{ projet.FonctionnalitePrincipales }}</p>
+    <p>Description : {{ projet.Rolesetresponsabilites }}</p>
+    <p>Description : {{ projet.ResultatsObtenus }}</p>
+</div> -->
+<div *ngIf="projet">
+
+    <div class="nom-date">
+        <h6>{{projet.nomProjet}} - {{projet.date}}</h6>
+    </div>
+
+    <div class="titre">
+        <h1><span class="part1">{{splitText(projet.textHeader)[0]}}</span><br> <span
+                class="part2">{{splitText(projet.textHeader)[1]}}</span></h1>
+    </div>
+    <div class="img-hero">
+        <img [src]="projet.image1" alt="">
+    </div>
+
+    <div class="description">
+        <h2>Description <span>du projet</span></h2>
+        <p>{{projet.DescriptionProjet}}</p>
+    </div>
+
+    <div class="description objectif">
+        <h2>Objectifs</h2>
+        <div class="container-container-objectif">
+            <div class="container-objectif">
+                <p *ngFor="let objectif of projet.Objectifs">• &#xa0;{{objectif}}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="description bento-fonctionnalite">
+        <h2>Fonctionnalite Principales</h2>
+        <div class="container-bento">
+            <div class="grid-div grid-div-trois">
+                <div *ngFor="let FonctionnalitePrincipales of projet.FonctionnalitePrincipales; let i = index">
+                    <div class="1-3-element box trois-box" *ngIf="i === 0 || i === 1 || i === 2">
+                        <strong>{{FonctionnalitePrincipales.split(':')[0] + ':'}}</strong>
+                        <p> {{FonctionnalitePrincipales.split(':')[1]}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-div">
+                <div *ngFor="let FonctionnalitePrincipales of projet.FonctionnalitePrincipales; let i = index">
+                    <div class="4-5-element box deux-box" *ngIf="i === 3 || i === 4">
+                        <strong>{{FonctionnalitePrincipales.split(':')[0] + ':'}}</strong>
+                        <p> {{FonctionnalitePrincipales.split(':')[1]}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-div">
+                <div *ngFor="let FonctionnalitePrincipales of projet.FonctionnalitePrincipales; let i = index">
+                    <div class="4-5-element box" *ngIf="i === 5 || i === 6 || i === 7">
+                        <strong>{{FonctionnalitePrincipales.split(':')[0] + ':'}}</strong>
+                        <p> {{FonctionnalitePrincipales.split(':')[1]}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+<div class="container-fonctioanlite">
+
+    <div class="container-bento bento-trois">
+        <div class="box-container" *ngFor="let FonctionnalitePrincipales of projet.FonctionnalitePrincipales; let i = index">
+            <div class="box" *ngIf="i === 0 || i === 1 || i === 2">
+                <h1>{{FonctionnalitePrincipales.split(':')[0] + ':'}}</h1>
+                <p>{{FonctionnalitePrincipales.split(':')[1]}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-bento bento-deux">
+        <div class="box-container" *ngFor="let FonctionnalitePrincipales of projet.FonctionnalitePrincipales; let i = index">
+            <div class="box box-deux" *ngIf="i === 3 || i === 4">
+                <h1>{{FonctionnalitePrincipales.split(':')[0] + ':'}}</h1>
+                <p>{{FonctionnalitePrincipales.split(':')[1]}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-bento bento-trois">
+    <div class="box-container" *ngFor="let FonctionnalitePrincipales of projet.FonctionnalitePrincipales; let i = index">
+        <div class="box" *ngIf="i === 5 || i === 6 || i === 7">
+            <h1>{{FonctionnalitePrincipales.split(':')[0] + ':'}}</h1>
+            <p>{{FonctionnalitePrincipales.split(':')[1]}}</p>
+        </div>
+    </div>
+</div>
+    <!-- <div class="bento1" *ngFor="let FonctionnalitePrincipales of projet.FonctionnalitePrincipales; let i = index">
+        <div *ngIf="i === 3 || i === 4">
+            <h1>{{FonctionnalitePrincipales.split(':')[0] + ':'}}</h1>
+            <p>{{FonctionnalitePrincipales.split(':')[1]}}.</p>
+        </div>
+    </div>
+    <div class="bento1" *ngFor="let FonctionnalitePrincipales of projet.FonctionnalitePrincipales; let i = index">
+        <div *ngIf="i === 5 || i === 6 || i === 7">
+            <h1>{{FonctionnalitePrincipales.split(':')[0] + ':'}}</h1>
+            <p>{{FonctionnalitePrincipales.split(':')[1]}}</p>
+        </div>
+    </div> -->
+</div>

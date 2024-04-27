@@ -14,6 +14,7 @@ import { AccordingComponent } from './components/modules/according/according.com
 import { BadgeComponent } from './components/modules/badge/badge.component';
 import { ProjetSiteComponent } from './components/modules/projet-site/projet-site.component';
 import { ProjetAutreComponent } from './components/modules/projet-autre/projet-autre.component';
+import { DetailProjetComponent } from './components/modules/detail-projet/detail-projet.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProjetAutreComponent } from './components/modules/projet-autre/projet-a
     AccordingComponent,
     BadgeComponent,
     ProjetSiteComponent,
-    ProjetAutreComponent
+    ProjetAutreComponent,
+    DetailProjetComponent
   ],
   imports: [
     BrowserModule,
