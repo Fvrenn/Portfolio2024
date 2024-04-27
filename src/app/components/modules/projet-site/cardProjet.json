@@ -9,6 +9,8 @@
         "colortexte": "#202020",
         "textHeader": "Site De Vente De Sushi",
         "image1": "../../../../assets/img/projet-detail/hakoshi/hero.png",
+        "image2": "../../../../assets/img/projet-detail/hakoshi/admin.png",
+        "video1": "../../../../assets/video-detail-projet/hakoshi/hakoshi-presentation.mp4",
         "DescriptionProjet": "Notre projet consistait à développer une application web de gestion de commandes pour un restaurant de sushi en ligne. L'objectif était de créer une plateforme conviviale qui permet aux clients de passer des commandes facilement et au personnel de gérer efficacement les commandes et les produits.",
         "Objectifs": [
             "Offrir aux clients une expérience de commande fluide et intuitive.",

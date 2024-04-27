@@ -1,5 +1,6 @@
 <div class="section-container">
-    <div class="container" *ngFor="let item of cardListe | slice:0:3">
+    <div class="container" *ngFor="let item of cardListe | slice:0:4">
+        <a [routerLink]="['/detail-projet', item.nomProjet]">
         <div class="card-site">
             <div class="content-container">
                 <div class="photo-card">
@@ -18,5 +19,6 @@
                 </div>
             </div>
         </div>
+    </a>
     </div>
 </div>

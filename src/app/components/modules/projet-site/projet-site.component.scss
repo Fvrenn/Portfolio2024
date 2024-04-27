@@ -6,7 +6,9 @@ $grey-black: #202020;
 $red-color: #dc2323;
 $white-color: #fff;
 $soft-blue: #e3f7f7;
-
+a {
+  text-decoration: none;
+}
 .section-container {
   display: flex;
   align-items: center;
@@ -14,6 +16,7 @@ $soft-blue: #e3f7f7;
   transition: all 0.3s ease-in-out;
   margin: 0 30px;
   flex-direction: column;
+  padding: 0;
 }
 
 .container {
@@ -265,6 +268,7 @@ video {
 
 @media screen and (min-width: 1824px) {
   .section-container {
-    margin: 0 auto;
+    margin: 0px auto;
+    padding: 0 30px;
   }
 }

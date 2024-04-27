@@ -8,7 +8,7 @@ import card from './cardProjetAutre.json'
 })
 export class ProjetAutreComponent {
 
-  cardListe: { imgfond: string, date: string, techno: string, nomProjet: string }[] = card;
+  cardListe: { imgfond: string, date: string, techno: string, nomProjet: string , textHeader: string, image1: string, image2: string, DescriptionProjet: string, Objectifs: string, LogicielUtilisees: string }[] = card;
 
   constructor() { }
 

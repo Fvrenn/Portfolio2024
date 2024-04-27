@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import card from '../projet-site/cardProjet.json';
+import graphisme from '../projet-autre/cardProjetAutre.json';
 
 @Component({
   selector: 'app-detail-projet',
@@ -15,7 +16,7 @@ export class DetailProjetComponent {
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       const nomProjet = params['nomProjet'];
-      this.projet = card.find((p: any) => p.nomProjet === nomProjet);
+      this.projet = [...card, ...graphisme].find((p: any) => p.nomProjet === nomProjet);
     });
   }
 
