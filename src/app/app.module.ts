@@ -17,6 +17,7 @@ import { ProjetAutreComponent } from './components/modules/projet-autre/projet-a
 import { DetailProjetComponent } from './components/modules/detail-projet/detail-projet.component';
 import { ExperiencesComponent } from './components/modules/experiences/experiences.component';
 import { PageProjetComponent } from './components/modules/page-projet/page-projet.component';
+import { PageProjetAutreComponent } from './components/modules/page-projet-autre/page-projet-autre.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PageProjetComponent } from './components/modules/page-projet/page-proje
     ProjetAutreComponent,
     DetailProjetComponent,
     ExperiencesComponent,
-    PageProjetComponent
+    PageProjetComponent,
+    PageProjetAutreComponent
   ],
   imports: [
     BrowserModule,

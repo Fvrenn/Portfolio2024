@@ -6,6 +6,8 @@ $grey-black: #202020;
 $red-color: #dc2323;
 $white-color: #fff;
 $soft-blue: #e3f7f7;
+
+
 a {
   text-decoration: none;
 }
@@ -115,6 +117,12 @@ a {
     color: $white-color;
   }
 }
+.section-container .container:nth-child(3):hover {
+  .info-card h5,
+  .info-card h6 {
+    color: #A9C2CB;
+  }
+}
 
 .info-card h5 {
   font-size: 25px;
@@ -187,6 +195,41 @@ video {
   color: $white-color;
 }
 
+.btn-more{
+  font-size: 24px;
+  color: $grey-black;
+  font-family: $culture;
+  font-weight: 900;
+  padding: 6px 18px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 13px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-more svg{
+  transition: all 0.3s ease-in-out;
+}
+.btn-more:hover{
+  background-color: $grey-black;
+  color: $white-color;
+  svg{
+    transform: translate(5px);
+  }
+}
+
+.container-more{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.button-project-more{
+  border:  $grey-black solid 1px;
+  border-radius: 13px;
+  display: inline-flex;
+}
 .card-site {
   transition: all 0.3s ease-in-out;
 }

@@ -1,0 +1,177 @@
+$acid-grotesk: "FFF Acid Grotesk";
+$culture: "Culture";
+
+// !COLOR
+$grey-black: #202020;
+$red-color: #dc2323;
+$white-color: #fff;
+$soft-blue: #e3f7f7;
+
+.section-container {
+  display: flex;
+  // justify-content: space-between;
+  gap: 30px;
+  margin: 0 30px;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 458px;
+  height: 458px;
+  border-radius: 12px;
+  background-color: rgba(178, 184, 190, 0.51);
+  padding: 7px;
+  cursor: pointer;
+}
+
+.container:hover img {
+  scale: 1.1;
+  transition: scale 0.3s ease-in-out;
+}
+
+.container img {
+  object-fit: cover;
+  width: 100%;
+  height: 458px;
+  border-radius: 16px;
+  filter: grayscale(1);
+  opacity: 0.6;
+  transition: scale 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100.1%;
+  height: 99.3%;
+  background-color: rgba(244, 249, 255, 0.6);
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 16px;
+}
+
+.content-container {
+  position: relative;
+}
+
+.card-site {
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.info-titre {
+  position: absolute;
+  top: 0px;
+  // width: 100%;
+  padding: 14px;
+  background-color: #d3d8de;
+  border-radius: 12px;
+  // box-shadow: rgb(0, 0, 0)px 0px 1px inset;
+  margin: 14px 0px 0px 10px;
+}
+
+
+.info-card {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 24px;
+  background-color: #d3d8de;
+  border-radius: 12px;
+  box-shadow: rgb(0, 0, 0)px 0px 1px inset;
+
+}
+
+.txt-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+h5 {
+  font-size: 18px;
+  color: $grey-black;
+  font-family: $acid-grotesk;
+  font-weight: 700;
+}
+
+.txt-card h6 {
+  font-size: 18px;
+  color: $grey-black;
+  font-family: $acid-grotesk;
+  font-weight: 700;
+}
+
+.titre{
+  margin: 80px 0px 100px 0;
+}
+.titre h1 {
+  font-size: 40px;
+  color: $grey-black;
+  text-align: center;
+  line-height: 50px;
+}
+
+.titre h1 .part1 {
+  font-family: $acid-grotesk;
+  font-weight: 600;
+}
+
+.titre h1 .part2 {
+  font-family: $culture;
+  font-weight: 900;
+}
+@media screen and (min-width: 383px) {
+  .titre h1 {
+    font-size: 60px;
+    color: $grey-black;
+    text-align: center;
+    line-height: 80px;
+  }
+}  
+
+@media screen and (min-width: 800px) {
+  .btn-section {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      align-items: center;
+      margin: 0px 0px 39px 0px;
+      justify-content: center;
+  }
+
+  .container {
+      transition: flex 0.3s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 907px) {
+  .titre h1 {
+      font-size: 112px;
+      color: $grey-black;
+      text-align: center;
+      line-height: normal;
+  }
+}
+
+@media screen and (max-width: 1397px) {
+  .section-container .container:nth-child(4) {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container{
+    width: 95%;
+  }
+  .section-container{
+    margin: 0;
+  }
+}

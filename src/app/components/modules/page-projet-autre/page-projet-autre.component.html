@@ -1,0 +1,29 @@
+<div class="titre" >
+    <h1><span class="part1">Mes projet de</span><br> <span
+            class="part2">Graphisme</span></h1>
+</div>
+
+<div class="section-container">
+    <div class="container" *ngFor="let item of cardListe ">
+        <a [routerLink]="['/detail-projet', item.nomProjet]">
+        <div class="card-site">
+            <div class="content-container">
+                <div class="photo-card">
+                    <div class="overlay"></div>
+                    <img [src]="item.imgfond" alt="">
+                </div>
+
+                <div class="info-titre">
+                    <h5>{{item.techno}}</h5>
+                </div>
+                <div class="info-card">
+                    <div class="txt-card">
+                        <h5>{{item.nomProjet}}</h5>
+                        <h6>{{item.date}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    </div>
+</div>

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
-
+  goToTop() {
+    window.scrollTo(0, 0);
+  }
 }

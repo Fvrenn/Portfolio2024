@@ -198,6 +198,18 @@ body.dark-theme .description h2{
 body.dark-theme .description p{
   color: $dark-mod-blue !important;
 }
+body.dark-theme .btn-more{
+  color: $dark-mod-blue !important;
+}
+body.dark-theme .button-project-more{
+  border:  $dark-mod-blue solid 1px;
+}
+body.dark-theme .btn-more:hover{
+  background-color: $dark-mod-blue !important;
+  color: $grey-black !important;
+}
+
+
 
 @media screen and (max-width: 851px) {
   body.dark-theme .nav__menu {

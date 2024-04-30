@@ -1,43 +1,58 @@
 <section id="project">
 
-<div class="btn-section">
-    <button class="site-web" [class.active]="activeButton === 'site-web'" (click)="showSiteWeb()">Site Web</button>
-    <button class="graphisme" [class.active]="activeButton === 'graphisme'" (click)="showCreationGraphique()">Creation
-        graphique</button>
-</div>
-<div class="section-container site" *ngIf="!showGraphique">
-    <div class="container" *ngFor="let item of cardListe.slice(0, 3)">
-        <a [routerLink]="['/detail-projet', item.nomProjet]">
-            <div class="card-site" (mouseenter)="playVideo(myVideo)" (mouseleave)="stopVideo(myVideo)">
-                <div class="header">
-                    <div class="header-txt" [style.backgroundColor]="item.backgroundColor">
-                        <h5 [style.color]="item.colortexte">{{item.nomProjet}}</h5>
-                        <h6 [style.color]="item.colortexte">{{item.date}}</h6>
+    <div class="btn-section">
+        <button class="site-web" [class.active]="activeButton === 'site-web'" (click)="showSiteWeb()">Site Web</button>
+        <button class="graphisme" [class.active]="activeButton === 'graphisme'"
+            (click)="showCreationGraphique()">Creation
+            graphique</button>
+    </div>
+    <div class="section-container site" *ngIf="!showGraphique">
+        <div class="container" *ngFor="let item of cardListe.slice(0, 3)">
+            <a [routerLink]="['/detail-projet', item.nomProjet]" (click)="goToTop()">
+                <div class="card-site" (mouseenter)="playVideo(myVideo)" (mouseleave)="stopVideo(myVideo)">
+                    <div class="header">
+                        <div class="header-txt" [style.backgroundColor]="item.backgroundColor">
+                            <h5 [style.color]="item.colortexte">{{item.nomProjet}}</h5>
+                            <h6 [style.color]="item.colortexte">{{item.date}}</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="content-container">
-                    <div class="photo-card">
-                        <div class="overlay" #myOverlay></div>
-                        <video #myVideo class="resizable-video" muted loop>
-                            <source [src]="item.videoFond" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="info-card">
-                        <div class="txt-card">
-                            <h5>{{item.descriptionProjet}}</h5>
-                            <h6>{{item.explicationTecno}}</h6>
+                    <div class="content-container">
+                        <div class="photo-card">
+                            <div class="overlay" #myOverlay></div>
+                            <video #myVideo class="resizable-video" muted loop>
+                                <source [src]="item.videoFond" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="info-card">
+                            <div class="txt-card">
+                                <h5>{{item.descriptionProjet}}</h5>
+                                <h6>{{item.explicationTecno}}</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
     </div>
-</div>
 
-<app-projet-autre class="graphisme" *ngIf="showGraphique"></app-projet-autre>
+    <app-projet-autre class="graphisme" *ngIf="showGraphique"></app-projet-autre>
+    <div class="container-more" >
+        <div class="button-project-more">
+            <a *ngIf="!showGraphique" class="btn-more" [routerLink]="['/page-projet'] " (click)="goToTop()">Voir plus <svg xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                </svg></a>
+                
+            <a *ngIf="showGraphique" class="btn-more" [routerLink]="['/page-projet-autre']" (click)="goToTop()">Voir plus <svg xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                </svg></a>
+        </div>
+    </div>
 
-<div class="button-project-more">
-    <a class="btn-more" [routerLink]="['/page-projet']" >Voir plus</a>
-</div>
 </section>

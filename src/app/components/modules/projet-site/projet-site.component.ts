@@ -1,6 +1,7 @@
 import { Component, ViewChildren, ElementRef, AfterViewInit, QueryList } from '@angular/core';
 import card from './cardProjet.json'
 
+
 @Component({
   selector: 'app-projet-site',
   templateUrl: './projet-site.component.html',
@@ -15,7 +16,9 @@ export class ProjetSiteComponent implements AfterViewInit {
 
   ngOnInit(): void {
   }
-
+  goToTop() {
+    window.scrollTo(0, 0);
+  }
   @ViewChildren('myVideo') myVideos?: QueryList<ElementRef<HTMLVideoElement>>;
 
   ngAfterViewInit() {

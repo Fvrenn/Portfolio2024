@@ -7,144 +7,144 @@ $red-color: #dc2323;
 $white-color: #fff;
 $soft-blue: #e3f7f7;
 
-*{
-    transition: all 0.5s ease
-
+* {
+  transition: all 0.5s ease;
 }
 
-#hero{
-    margin-top: 58px;
+html {
+  scroll-behavior: inherit;
+}
+
+#hero {
+  margin-top: 58px;
 }
 .nom {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .nom h2 {
-    font-family: $culture;
-    font-size: 69px;
-    letter-spacing: -1%;
-    color: $grey-black;
-    font-weight: 400;
+  font-family: $culture;
+  font-size: 69px;
+  letter-spacing: -1%;
+  color: $grey-black;
+  font-weight: 400;
 }
 
 .nom h1 {
-    font-family: $acid-grotesk;
-    font-size: 102px;
-    letter-spacing: 4%;
-    color: $grey-black;
-    margin-top: -10px;
-    font-weight: 400;
+  font-family: $acid-grotesk;
+  font-size: 102px;
+  letter-spacing: 4%;
+  color: $grey-black;
+  margin-top: -10px;
+  font-weight: 400;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 59px;
-    align-items: center;
-    margin-top: 30px;
-    padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 59px;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 30px;
 }
 
 .img img {
-    width: 180px;
-    height: 278px;
-    border-radius: 29px;
-    object-fit: cover;
+  width: 180px;
+  height: 278px;
+  border-radius: 29px;
+  object-fit: cover;
 }
 
 .img {
-    transform: rotate(-11deg);
+  transform: rotate(-11deg);
 }
-.para{
-    padding: 0 9px;
-    max-width: 435px;
+.para {
+  padding: 0 9px;
+  max-width: 435px;
 }
-.para p{
-    font-family: $acid-grotesk;
-    color: $grey-black;
-    font-size: 17px;
-    text-align: left;
-    font-weight: 500;
-    line-height: 22px;
+.para p {
+  font-family: $acid-grotesk;
+  color: $grey-black;
+  font-size: 17px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 @media screen and (min-width: 600px) {
-    .nom h2 {
-        font-size: 122px;
-        letter-spacing: 0;
-    }
-    
-    .nom h1 {
-        font-size: 180px;
-        letter-spacing: 4%;
-        margin-top: -20px;
-    }
-    
-    .info {
-        margin-top: 80px;
-    }
-    .para{
-        margin-top: 34px;
-    }
+  .nom h2 {
+    font-size: 122px;
+    letter-spacing: 0;
+  }
+
+  .nom h1 {
+    font-size: 180px;
+    letter-spacing: 4%;
+    margin-top: -20px;
+  }
+
+  .info {
+    margin-top: 80px;
+  }
+  .para {
+    margin-top: 34px;
+  }
 }
 
 @media screen and (min-width: 900px) {
-    .nom h2 {
-        font-size: 122px;
-        letter-spacing: 0;
-    }
-    
-    .nom h1 {
-        font-size: 180px;
-        letter-spacing: 4%;
-        margin-top: -20px;
-    }
-    
-    .info {
-        flex-direction: row;
-        gap: 121px;
-        align-items: normal;
-        justify-content: center;
-        margin-top: 49px;
-    }
+  .nom h2 {
+    font-size: 122px;
+    letter-spacing: 0;
+  }
 
-    .para{
-        margin-top: 34px;
-    }
+  .nom h1 {
+    font-size: 180px;
+    letter-spacing: 4%;
+    margin-top: -20px;
+  }
 
-    
+  .info {
+    flex-direction: row;
+    gap: 121px;
+    align-items: normal;
+    justify-content: center;
+    margin-top: 49px;
+  }
+
+  .para {
+    margin-top: 34px;
+  }
 }
 @media screen and (min-width: 1024px) {
-    .nom h2 {
-        font-size: 142px;
-        letter-spacing: -1%;
-    }
-    
-    .nom h1 {
-        font-size: 200px;
-        letter-spacing: 6px;
-        margin-top: -40px;
-    }
-    
-    .info {
-        flex-direction: row;
-        gap: 126px;
-        align-items: normal;
-        justify-content: center;
-        margin-top: 49px;
-    }
+  .nom h2 {
+    font-size: 142px;
+    letter-spacing: -1%;
+  }
 
-    .para{
-        margin-top: 34px;
-    }
+  .nom h1 {
+    font-size: 200px;
+    letter-spacing: 6px;
+    margin-top: -40px;
+  }
 
-    .img img {
-        width: 237px;
-        height: 366px;
-        border-radius: 29px;
-        object-fit: cover;
-    }
-    
+  .info {
+    flex-direction: row;
+    gap: 126px;
+    align-items: normal;
+    justify-content: center;
+    margin-top: 49px;
+  }
+
+  .para {
+    margin-top: 34px;
+  }
+
+  .img img {
+    width: 237px;
+    height: 366px;
+    border-radius: 29px;
+    object-fit: cover;
+  }
 }
