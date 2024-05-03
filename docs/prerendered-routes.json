@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/",
+    "/nav-bar",
+    "/page-projet",
+    "/page-projet-autre"
+  ]
+}
