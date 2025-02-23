@@ -75,7 +75,7 @@ $soft-blue: #e3f7f7;
   height: 125px;
 }
 .accordion .open:nth-child(2)  p  {
-  height: 40px;
+  height: 250px;
 }
 .accordion .open:nth-child(3)  p  {
   height: 300px;
@@ -115,6 +115,16 @@ $soft-blue: #e3f7f7;
   object-fit: cover;
   border-radius: 35px;
 }
+@media screen and (min-width: 371px) {
+  .accordion .open:nth-child(2)  p  {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 531px) {
+  .accordion .open:nth-child(2)  p  {
+    height: 140px;
+  }
+}
 @media screen and (min-width: 700px) {
   .accordion-content header .title {
     font-size: 31px;
@@ -131,6 +141,10 @@ $soft-blue: #e3f7f7;
 
   .accordion-content .description {
     font-size: 1.2rem;
+  }
+
+  .accordion .open:nth-child(2)  p  {
+    height: 80px;
   }
 }
 @media screen and (min-width: 1069px) {
@@ -152,6 +166,20 @@ $soft-blue: #e3f7f7;
 
   .accordion-content .description {
     font-size: 1.3rem;
+  }
+
+  .accordion .open:nth-child(2)  p  {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1169px) {
+  .accordion .open:nth-child(2)  p  {
+    height: 140px;
+  }
+}
+@media screen and (min-width: 1247px) {
+  .accordion .open:nth-child(2)  p  {
+    height: 80px;
   }
 }
 @media screen and (min-width: 1540px) {

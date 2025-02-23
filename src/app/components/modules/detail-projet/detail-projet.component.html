@@ -1,70 +1,113 @@
 <div *ngIf="projet">
+  <div class="nom-date" *ngIf="projet.nomProjet && projet.date">
+    <h6>{{ projet.nomProjet }} - {{ projet.date }}</h6>
+  </div>
 
-    <div class="nom-date" *ngIf="projet.nomProjet && projet.date">
-        <h6>{{projet.nomProjet}} - {{projet.date}}</h6>
-    </div>
+  <div class="view-toggle">
+    <button [class.active]="!isDetailedView" (click)="toggleView(false)">
+      Vue simplifiée
+    </button>
+    <button [class.active]="isDetailedView" (click)="toggleView(true)">
+      Vue détaillée
+    </button>
+  </div>
 
-    <div class="titre" *ngIf="projet.textHeader">
-        <h1><span class="part1">{{splitText(projet.textHeader)[0]}}</span><br> <span
-                class="part2">{{splitText(projet.textHeader)[1]}}</span></h1>
-    </div>
-    <div class="img-hero" *ngIf="projet.image1">
-        <img [src]="projet.image1" alt="">
-    </div>
+  <div class="titre" *ngIf="projet.textHeader">
+    <h1>
+      <span class="part1">{{ splitText(projet.textHeader)[0] }}</span
+      ><br />
+      <span class="part2">{{ splitText(projet.textHeader)[1] }}</span>
+    </h1>
+  </div>
 
-    <div class="description" *ngIf="projet.DescriptionProjet">
-        <h2>Description <span>du projet</span></h2>
-        <p class="description-para">{{projet.DescriptionProjet}}</p>
-    </div>
-
-    <div class="video-container" *ngIf="projet.video1">
-        <div class="video">
-            <video controls>
-                <source [src]="projet.video1" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+  <div class="badge-container" *ngIf="selectedBadges.length > 0">
+    <ng-container *ngFor="let badge of badges">
+      <div
+        class="badge"
+        *ngIf="
+          selectedBadges.includes(badge.logoPath.split('/').pop().split('.')[0])
+        "
+      >
+        <div class="badge-icon" [style.backgroundColor]="badge.backgroundColor">
+          <img [src]="badge.logoPath" alt="technology badge" />
         </div>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="video-container" *ngIf="projet.video1">
+    <div class="video">
+      <video controls>
+        <source [src]="projet.video1" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
-
-    <div class="description objectif" *ngIf="projet.Objectifs">
-        <h2>Objectifs</h2>
-        <div class="container-container-objectif">
-            <div class="container-objectif">
-                <p *ngFor="let objectif of projet.Objectifs">• &#xa0;{{objectif}}</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="img-hero" *ngIf="projet.image2">
-        <img [src]="projet.image2" alt="">
-    </div>
-
-    
-
-
-    <div class="container-fonctioanlite" *ngIf="projet.FonctionnalitePrincipales">
-        <h2 class="fonctionalité">Fonctionnalite</h2>
-        <div class="box-container">
-            <div class="box" *ngFor="let FonctionnalitePrincipales of projet.FonctionnalitePrincipales; let i = index">
-                <h1>{{FonctionnalitePrincipales.split(':')[0] + ':'}}</h1>
-                <p>{{FonctionnalitePrincipales.split(':')[1]}}</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="technologie-utiliser" *ngIf="projet.TechnologiesUtilisees">
-        <h2>Technologies <span>Utilisees</span></h2>
-        <div class="techno-container">
-            <div class="techno-card" *ngFor="let TechnologiesUtilisees of projet.TechnologiesUtilisees; let i = index">
-                <h1>{{TechnologiesUtilisees.split(':')[0] + ':'}}</h1>
-                <p>{{TechnologiesUtilisees.split(':')[1]}}</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="description" *ngIf="projet.ResultatsObtenus">
+  </div>
+  <div class="description" *ngIf="projet.DescriptionProjet">
     <h2>Description <span>du projet</span></h2>
-    <p class="description-para">{{projet.ResultatsObtenus}}</p>
+    <p class="description-para">{{ projet.DescriptionProjet }}</p>
+  </div>
+
+  <div class="img-hero" *ngIf="projet.image1">
+    <img [src]="projet.image1" alt="" />
+  </div>
+
+  <ng-container *ngIf="isDetailedView">
+    <div class="description objectif" *ngIf="projet.Objectifs">
+      <h2>Objectifs</h2>
+      <div class="container-container-objectif">
+        <div class="container-objectif">
+          <p *ngFor="let objectif of projet.Objectifs">
+            • &#xa0;{{ objectif }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!projet.video1">
+    <div class="img-hero" *ngIf="projet.image2">
+      <img [src]="projet.image2" alt="" />
+    </div>
+  </ng-container>
+  <ng-container *ngIf="isDetailedView">
+
+  <div class="container-fonctioanlite" *ngIf="projet.FonctionnalitePrincipales">
+    <h2 class="fonctionalité">Fonctionnalite</h2>
+    <div class="box-container">
+      <div
+        class="box"
+        *ngFor="
+          let FonctionnalitePrincipales of projet.FonctionnalitePrincipales;
+          let i = index
+        "
+      >
+        <h1>{{ FonctionnalitePrincipales.split(":")[0] + ":" }}</h1>
+        <p>{{ FonctionnalitePrincipales.split(":")[1] }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="technologie-utiliser" *ngIf="projet.TechnologiesUtilisees">
+    <h2>Technologies <span>Utilisees</span></h2>
+    <div class="techno-container">
+      <div
+        class="techno-card"
+        *ngFor="
+          let TechnologiesUtilisees of projet.TechnologiesUtilisees;
+          let i = index
+        "
+      >
+        <h1>{{ TechnologiesUtilisees.split(":")[0] + ":" }}</h1>
+        <p>{{ TechnologiesUtilisees.split(":")[1] }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="description" *ngIf="projet.ResultatsObtenus">
+    <h2>Description <span>du projet</span></h2>
+    <p class="description-para">{{ projet.ResultatsObtenus }}</p>
+  </div>
+
+</ng-container>
+
 </div>

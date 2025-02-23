@@ -1,20 +1,26 @@
 [
-    {
-        "nomVeille": "Hako Shi",
-        "paraVeille": "super veille trop bien qui tue ",
-        "dateVeille": "17/02/2025",
-        "imageVeille": "../../../../assets/img/projet-detail/tatoo-samon/image1.png"
-    },
-    {
-        "nomVeille": "Hako Shi",
-        "paraVeille": "super veille trop bien qui tue ",
-        "dateVeille": "17/02/2025",
-        "imageVeille": "../../../../assets/img/projet-detail/tatoo-samon/image1.png"
-    },
-    {
-        "nomVeille": "Hako Shi",
-        "paraVeille": "super veille trop bien qui tue ",
-        "dateVeille": "17/02/2025",
-        "imageVeille": "../../../../assets/img/projet-detail/tatoo-samon/image1.png"
-    }
+  {
+    "nomVeille": "Hako Shi",
+    "paraVeille": "super veille trop bien qui tue ",
+    "dateVeille": "17/02/2025",
+    "imageVeille": "../../../../assets/img/projet-detail/tatoo-samon/image1.png",
+    "backgroundColor": "#31291e",
+    "colortexte": "white"
+  },
+  {
+    "nomVeille": "Hako Shi",
+    "paraVeille": "super veille trop bien qui tue ",
+    "dateVeille": "17/02/2025",
+    "imageVeille": "../../../../assets/img/projet-detail/tatoo-samon/image1.png",
+    "backgroundColor": "#31291e",
+    "colortexte": "white"
+  },
+  {
+    "nomVeille": "Hako Shi",
+    "paraVeille": "super veille trop bien qui tue ",
+    "dateVeille": "17/02/2025",
+    "imageVeille": "../../../../assets/img/projet-detail/tatoo-samon/image1.png",
+    "backgroundColor": "#31291e",
+    "colortexte": "white"
+  }
 ]

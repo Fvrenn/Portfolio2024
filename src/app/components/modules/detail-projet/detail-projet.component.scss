@@ -109,7 +109,6 @@ $soft-blue: #e3f7f7;
   justify-content: space-between;
 }
 
-
 .bento-deux {
   gap: 40px;
   margin-top: 20px;
@@ -118,9 +117,6 @@ $soft-blue: #e3f7f7;
 .container-fonctioanlite {
   margin: 100px auto;
 }
-
-
-
 
 .box h1 {
   font-size: 24px;
@@ -136,7 +132,6 @@ $soft-blue: #e3f7f7;
   color: $soft-blue;
   font-weight: 500;
 }
-
 
 .video-container video {
   width: 80%;
@@ -193,8 +188,67 @@ $soft-blue: #e3f7f7;
   font-weight: 500;
 }
 
-.technologie-utiliser{
+.technologie-utiliser {
   margin: 100px 0;
+}
+.view-toggle {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+
+  button {
+    font-size: 24px;
+    color: #202020;
+    font-family: $culture;
+    font-weight: 900;
+    padding: 6px 18px;
+    border-radius: 13px;
+    background-color: transparent;
+    cursor: pointer;
+    border: #202020 solid 1px;
+
+    &.active {
+      background-color: #202020;
+    color: #fff;
+    }
+  }
+}
+
+
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  .badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .badge-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+      
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1278px) {
@@ -203,7 +257,6 @@ $soft-blue: #e3f7f7;
     gap: 20px;
     align-items: center;
   }
-
 
   .container-objectif {
     display: flex;
@@ -287,7 +340,6 @@ $soft-blue: #e3f7f7;
     color: $grey-black;
     text-align: center;
   }
-
 
   .container-objectif p {
     width: 90%;

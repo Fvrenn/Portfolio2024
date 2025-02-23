@@ -2,6 +2,7 @@
     {
         "nomProjet": "Hako Shi",
         "date": "2024",
+        "badges": ["angular_solidBlack 1", "scss", "ts", "html-_1_ 1", "php"],
         "descriptionProjet": "Site de vente de sushi",
         "explicationTecno": "Developement Web, Angular",
         "videoFond": "../../../../assets/img/videoPreview-card/sushi-video-track.mp4",

@@ -7,6 +7,6 @@ import card from './cardVeille.json'
   styleUrl: './veille.component.scss'
 })
 export class VeilleComponent {
-  cardListe: { nomVeille: string, paraVeille: string, dateVeille: string, imageVeille: string}[] = card;
+  cardListe: { nomVeille: string, paraVeille: string, dateVeille: string, imageVeille: string,  backgroundColor: string, colortexte: string}[] = card;
 
 }

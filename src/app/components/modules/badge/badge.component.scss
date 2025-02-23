@@ -1,3 +1,12 @@
+$acid-grotesk: "FFF Acid Grotesk";
+$culture: "Culture";
+
+// !COLOR
+$grey-black: #202020;
+$red-color: #dc2323;
+$white-color: #fff;
+$soft-blue: #e3f7f7;
+
 .container{
   display: flex;
   flex-wrap: wrap;
@@ -13,4 +22,38 @@
 img{
   width: 22px;
   height: 22px;
+}
+a{
+  text-decoration: none;
+}
+
+.btn-more{
+  font-size: 24px;
+  color: $grey-black;
+  font-family: $culture;
+  font-weight: 900;
+  padding: 6px 18px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 13px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-more svg{
+  transition: all 0.3s ease-in-out;
+}
+.btn-more:hover{
+  background-color: $grey-black;
+  color: $white-color;
+  svg{
+    transform: translate(5px);
+  }
+}
+
+.button-project-more{
+  border:  $grey-black solid 1px;
+  border-radius: 13px;
+  display: inline-flex;
 }

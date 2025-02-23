@@ -8,6 +8,18 @@
         "logoPath": "../../../../assets/icons/badge/css-3-_1_ 1.svg"
     },
     {
+        "backgroundColor": "#cd669a",
+        "logoPath": "../../../../assets/icons/badge/scss.svg"
+    },
+    {
+        "backgroundColor": "#0076c6",
+        "logoPath": "../../../../assets/icons/badge/ts.svg"
+    },
+    {
+        "backgroundColor": "#777bb3",
+        "logoPath": "../../../../assets/icons/badge/php.svg"
+    },
+    {
         "backgroundColor": "#E96228",
         "logoPath": "../../../../assets/icons/badge/html-_1_ 1.svg"
     },
