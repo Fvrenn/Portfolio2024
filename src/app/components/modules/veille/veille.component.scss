@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// ?VARIABLES
+$acid-grotesk: "FFF Acid Grotesk";
+$culture: "Culture";
+// !COLOR
+$grey-black: #202020;
+$red-color: #dc2323;
+$white-color: #fff;
+$soft-blue: #e3f7f7;
+
+.container {
+  font-family: $acid-grotesk;
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.veille-card {
+  display: flex;
+  flex-direction: column;
+  img {
+    width: clamp(200px, 100%, 790px);
+    width: 580px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+h6 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.veille-description {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 5px;
+}

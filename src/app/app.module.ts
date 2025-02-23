@@ -18,6 +18,7 @@ import { DetailProjetComponent } from './components/modules/detail-projet/detail
 import { ExperiencesComponent } from './components/modules/experiences/experiences.component';
 import { PageProjetComponent } from './components/modules/page-projet/page-projet.component';
 import { PageProjetAutreComponent } from './components/modules/page-projet-autre/page-projet-autre.component';
+import { VeilleComponent } from './components/modules/veille/veille.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PageProjetAutreComponent } from './components/modules/page-projet-autre
     DetailProjetComponent,
     ExperiencesComponent,
     PageProjetComponent,
-    PageProjetAutreComponent
+    PageProjetAutreComponent,
+    VeilleComponent
   ],
   imports: [
     BrowserModule,

@@ -218,7 +218,7 @@ hr {
     margin: 0 auto;
     border: 1px solid $grey-black;
     border-radius: 28px;
-    max-width: 859px;
+    max-width: 900px;
   }
 
   .nav__toggle,
@@ -238,7 +238,7 @@ hr {
     justify-content: center;
   }
 
-  ul .nav__item:nth-child(n + 1):nth-child(-n + 4) {
+  ul .nav__item:nth-child(n + 1):nth-child(-n + 5) {
     border-right: solid 1px $grey-black;
   }
 
@@ -251,7 +251,7 @@ hr {
     border-radius: 28px 0px 0px 28px;
   }
 
-  .nav__item:nth-child(5) {
+  .nav__item:nth-child(6) {
     border-radius: 0px 28px 28px 0px;
   }
 

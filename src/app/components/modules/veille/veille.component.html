@@ -1,0 +1,20 @@
+<div class="container-card">
+<div class="container" *ngFor="let item of cardListe.slice(0, 3)">
+  <a>
+    <div class="veille-card">
+        <img [src]="item.imageVeille" alt="Veille technologique" />
+      <div class="header">
+        <div class="header-txt">
+          <h2>{{ item.nomVeille }}</h2>
+          <h6>{{ item.paraVeille }}</h6>
+        </div>
+      </div>
+      <div class="veille-content">
+        <div class="veille-info">
+          <p class="veille-description">{{ item.dateVeille }}</p>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+</div>
