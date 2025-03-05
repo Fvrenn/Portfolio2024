@@ -1,26 +1,29 @@
 [
   {
-    "nomVeille": "Hako Shi",
-    "paraVeille": "super veille trop bien qui tue ",
-    "dateVeille": "17/02/2025",
-    "imageVeille": "../../../../assets/img/projet-detail/tatoo-samon/image1.png",
-    "backgroundColor": "#31291e",
-    "colortexte": "white"
+    "nomVeille": "Functions in CSS !",
+    "paraVeille": "Ajout des fonctions en CSS",
+    "dateVeille": "03/03/2025",
+    "imageVeille": "../../../../assets/img/veille/css fonction.webp",
+    "backgroundColor": "#206AB5",
+    "colortexte": "white",
+    "link": "https://css-tricks.com/functions-in-css/?ref=dailydev"
   },
   {
-    "nomVeille": "Hako Shi",
-    "paraVeille": "super veille trop bien qui tue ",
-    "dateVeille": "17/02/2025",
-    "imageVeille": "../../../../assets/img/projet-detail/tatoo-samon/image1.png",
-    "backgroundColor": "#31291e",
-    "colortexte": "white"
+    "nomVeille": "React Native 0.77 nouveautés",
+    "paraVeille": "A New CSS Era !",
+    "dateVeille": "04/02/2025",
+    "imageVeille": "../../../../assets/img/veille/react-native-0.77.png",
+    "backgroundColor": "#181818",
+    "colortexte": "white",
+    "link": "https://itnext.io/a-new-css-era-a-goodbye-to-console-log-and-expo-brings-hosting-to-the-masses-99fe447e56a2?gi=b1678a2407b8"
   },
   {
-    "nomVeille": "Hako Shi",
-    "paraVeille": "super veille trop bien qui tue ",
-    "dateVeille": "17/02/2025",
-    "imageVeille": "../../../../assets/img/projet-detail/tatoo-samon/image1.png",
-    "backgroundColor": "#31291e",
-    "colortexte": "white"
+    "nomVeille": "Tailwind CSS v4.0",
+    "paraVeille": "Rebuilds complets : jusqu'à 3,5 fois plus rapides.",
+    "dateVeille": "22/01/2025",
+    "imageVeille": "../../../../assets/img/veille/tailwind.jpg",
+    "backgroundColor": "#000000",
+    "colortexte": "white",
+    "link": "https://tailwindcss.com/blog/tailwindcss-v4"
   }
 ]

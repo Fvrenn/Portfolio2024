@@ -1,31 +1,30 @@
 <div class="titre" id="projet-page" >
-  <h1><span class="part1">Veille technologique</span><br> <span
-          class="part2">Réalisé</span></h1>
-</div>
-
-<div class="section-container site" >
-  <div class="container" *ngFor="let item of cardListe.slice(0, 3)">
-      <a>
-          <div class="card-site">
-              <div class="header">
-                  <div class="header-txt" [style.backgroundColor]="item.backgroundColor">
-                      <h5 [style.color]="item.colortexte">{{ item.nomVeille }}</h5>
-                      <h6 [style.color]="item.colortexte">{{ item.dateVeille }}</h6>
-                  </div>
-              </div>
-              <div class="content-container">
-                <div class="photo-card">
-                  <div class="overlay" #myOverlay></div>
-                  <img [src]="item.imageVeille" alt="Veille technologique" class="resizable-video">
-              </div>
-                  <div class="info-card">
-                      <div class="txt-card">
-                          <h6>{{ item.paraVeille }}</h6>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </a>
+    <h1><span class="part1">Veille technologique</span><br> <span
+            class="part2">Réalisé</span></h1>
   </div>
-</div>
-
+  
+  <div class="section-container site" >
+    <div class="container" *ngFor="let item of cardListe.slice(0, 3)">
+        <a [href]="item.link" target="_blank">
+            <div class="card-site">
+                <div class="header">
+                    <div class="header-txt" [style.backgroundColor]="item.backgroundColor">
+                        <h5 [style.color]="item.colortexte">{{ item.nomVeille }}</h5>
+                        <h6 [style.color]="item.colortexte">{{ item.dateVeille }}</h6>
+                    </div>
+                </div>
+                <div class="content-container">
+                  <div class="photo-card">
+                    <div class="overlay" #myOverlay></div>
+                    <img [src]="item.imageVeille" alt="Veille technologique" class="resizable-video">
+                </div>
+                    <div class="info-card">
+                        <div class="txt-card">
+                            <h6>{{ item.paraVeille }}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+  </div>

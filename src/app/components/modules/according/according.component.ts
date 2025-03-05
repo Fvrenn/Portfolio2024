@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import  {BadgeComponent} from '../badge/badge.component'
+import { BadgeComponent } from '../badge/badge.component'
 @Component({
   selector: 'app-according',
   templateUrl: './according.component.html',
@@ -10,17 +10,25 @@ export class AccordingComponent {
     { title: 'Découvrez qui je suis', description: "Passionné par l'informatique et les défis qu'elle implique, je suis quelqu'un de dévoué. Mes compétences en relations humaines et en communication, combinées à ma formation, me permettent d'apporter une contribution appréciable à votre entreprise." },
     { title: 'Les outils et language que je maitrise', description: '' },
     { title: 'Mes experiences', description: '' }
-];
+  ];
 
+  currentIndex: number = -1;
+  showExperiences: boolean = false;
+  showAccordionItems: boolean = true;
 
-
-currentIndex!: number;
-
-toggleAccordion(index: number) {
-    if (this.currentIndex === index) {
-        this.currentIndex = -1;
+  toggleAccordion(index: number) {
+    if (index === 2) {
+      this.showExperiences = !this.showExperiences;
+      this.showAccordionItems = !this.showExperiences;
+      this.currentIndex = -1;
     } else {
+      if (this.currentIndex === index) {
+        this.currentIndex = -1;
+      } else {
         this.currentIndex = index;
+        this.showExperiences = false;
+        this.showAccordionItems = true;
+      }
     }
-}
+  }
 }
