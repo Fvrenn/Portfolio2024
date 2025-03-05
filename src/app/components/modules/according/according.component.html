@@ -1,41 +1,26 @@
 <section id="about">
-    <div class="container" [ngClass]="{'experiences-mode': showExperiences}">
+    <div class="container">
         <div class="accordion">
-            <div class="accordion-content experiences-title" [ngClass]="{'open': showExperiences}" (click)="toggleAccordion(2)">
+            <div class="accordion-content" *ngFor="let content of accordionContents; let i = index"
+                [ngClass]="{'open': i === currentIndex}">
                 <div class="border-grey">
                     <div class="border-red" style="width: 0%;"></div>
                 </div>
-                <header>
-                    <span class="title">{{ accordionContents[2].title }}</span>
+                <header (click)="toggleAccordion(i)">
+                    <span class="title">{{ content.title }}</span>
                 </header>
-                
-                <div class="description experiences-wrapper" *ngIf="showExperiences">
-                    <app-experiences></app-experiences>
-                </div>
-            </div>
-            
-            <div *ngIf="showAccordionItems">
-                <div class="accordion-content" *ngFor="let content of accordionContents.slice(0, 2); let i = index"
-                    [ngClass]="{'open': i === currentIndex}">
-                    <div class="border-grey">
-                        <div class="border-red" style="width: 0%;"></div>
-                    </div>
-                    <header (click)="toggleAccordion(i)">
-                        <span class="title">{{ content.title }}</span>
-                    </header>
-                    <p class="description">
-                        {{ content.description }}
-                        <app-badge *ngIf="i === 1 && i === currentIndex"></app-badge>
-                    </p>
-                </div>
+                <p class="description">
+                    {{ content.description }}
+                    <app-badge *ngIf="i === 1 && i === currentIndex"></app-badge>
+                    <app-experiences *ngIf="i === 2 && i === currentIndex"></app-experiences>
+                </p>
             </div>
         </div>
 
-        <div class="photo-container" *ngIf="!showExperiences">
-            <div class="photo-wrapper">
-                <img class="photo photo-base" src="../../../../assets/img/img-about.jpg" alt="Image de base">
-                <img class="photo photo-filter" src="../../../../assets/img/img-about-filter.png" alt="Image avec filtre">
-            </div>
+        <div class="photo-container">
+            <img class="photo" src="../../../../assets/img/img-about.jpg" alt="">
+            <img class="photo" src="../../../../assets/img/img-about-filter.png" alt="">
         </div>
+
     </div>
 </section>

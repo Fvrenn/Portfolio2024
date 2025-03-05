@@ -103,87 +103,36 @@ $soft-blue: #e3f7f7;
 .photo-container {
   display: none;
 }
-.photo-wrapper {
-  position: relative;
-  width: 546px;
-  height: 350px;
-  border-radius: 35px;
-  overflow: hidden;
-}
 .container {
   display: flex;
   justify-content: space-between;
+  // align-items: center;
   max-width: 1540px;
 }
 .photo {
-  width: 100%;
-  height: 100%;
+  width: 546px;
+  height: 350px;
   object-fit: cover;
   border-radius: 35px;
+}
+
+.photo-container {
+  position: relative;
+}
+
+.photo-container img:nth-child(2) {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.photo-base {
-  z-index: 1;
-}
-
-.photo-filter {
+  width: 100%;
+  height: 100%;
   z-index: 2;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.photo-wrapper:hover .photo-filter {
+.photo-container:hover img:nth-child(2) {
   opacity: 1;
-}
-
-
-// Ajouter ou modifier ces styles pour animer le contenu des expériences
-.accordion-content .experiences-wrapper {
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: all 0.2s ease-out;
-  font-family: $acid-grotesk;
-}
-
-.accordion-content.open .experiences-wrapper {
-  height: auto; // Ou définir une hauteur spécifique
-  margin-top: 1rem;
-  opacity: 1;
-}
-
-// Style spécial pour l'accordéon des expériences
-.experiences-title.open .border-red {
-  width: 100% !important;
-  transition: width 0.8s ease-in-out;
-}
-
-// Supprimer le conteneur d'expériences séparé car il est maintenant intégré
-// à l'accordéon lui-même
-.experiences-mode {
-  flex-direction: column;
-  width: 100%;
-}
-
-// Ajuster la hauteur pour le contenu des expériences
-.accordion .open.experiences-title .description {
-  height: auto; // Ou définir une hauteur fixe, par exemple 400px
-  max-height: 800px; // Pour permettre l'animation de transition
-  overflow: visible; // Pour permettre le défilement si nécessaire
-}
-
-// Media queries pour maintenir la responsivité
-@media screen and (max-width: 768px) {
-  .experiences-mode {
-    padding: 0 15px;
-  }
-  
-  .accordion-content.open .experiences-wrapper {
-    margin-top: 0.5rem;
-  }
 }
 @media screen and (min-width: 371px) {
   .accordion .open:nth-child(2)  p  {
@@ -269,13 +218,10 @@ $soft-blue: #e3f7f7;
     max-width: 687px;
   }
 
-  .photo-wrapper {
+  .photo {
     width: 706px;
     height: 452px;
-    border-radius: 41px;
-  }
-  
-  .photo {
+    object-fit: cover;
     border-radius: 41px;
   }
 
