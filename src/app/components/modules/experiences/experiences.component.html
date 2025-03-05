@@ -1,27 +1,38 @@
 <section>
     <div class="container-flex">
-        <div class="container" *ngFor="let item of experiencesListe">
-            <div class="container-experience">
-                <div class="date ">
-                    <h6>{{item.date}}</h6>
-                </div>
-                <div class="info-entreprise">
-                    <div class="role-entreprise">
-                        <h5>{{item.roleEntreprise}}</h5>
-                    </div>
-                    <div   class="nom-entreprise">
-                        <a [href]="item.link" target="_blank">
-                        <h6 *ngIf="item.nomEntreprise" class="link">{{item.nomEntreprise}}</h6>
-                        
-                            <svg *ngIf="item.link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+      <div class="container" *ngFor="let item of experienceListe">
+        <div class="container-experience">
+          <div class="date">
+            <h6>{{ item.date }}</h6>
+          </div>
+          <div class="info-entreprise">
+            <div class="role-entreprise">
+              <h5>{{ item.roleEntreprise }}</h5>
             </div>
+            <div class="nom-entreprise">
+              <a [href]="item.link" target="_blank">
+                <h6 *ngIf="item.nomEntreprise" class="link">{{ item.nomEntreprise }}</h6>
+                <svg *ngIf="item.link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="description-badges">
+              <div class="description">
+                <p>{{ item.description }}</p>
+              </div>
+              <div class="badge-container" *ngIf="item.badges?.length">
+                <ng-container *ngFor="let badge of badges">
+                    <div class="badge" *ngIf="item.badges.includes(((badge.logoPath.split('/').pop() || '').split('.')[0]).replace(' 1', ''))">
+                        <div class="badge-icon" [style.backgroundColor]="badge.backgroundColor">
+                          <img [src]="badge.logoPath" alt="technology badge" />
+                        </div>
+                      </div>
+                </ng-container>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>

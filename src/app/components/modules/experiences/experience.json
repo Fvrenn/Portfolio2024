@@ -1,27 +1,53 @@
 [
     {
+        "date": "2024 - 2025 ",
+        "roleEntreprise": "Alternance Développeur web",
+        "nomEntreprise": "Trialog",
+        "link": "https://www.trialog.com/fr/accueil/",
+        "description": "Je travaille sur l'interface d'un service de virtualisation de bornes de recharge en utilisant le protocole OCPP.",
+        "badges": [
+            "angular_solidBlack",
+            "ts",
+            "html-_1_",
+            "css-3-_1_",
+            "bootstrap"
+        ]
+    },
+    {
         "date": "2024 — Apr",
         "roleEntreprise": "Stage développement web",
-        "nomEntreprise": "Trialog",   
-        "link": "https://www.trialog.com/fr/accueil/"
+        "nomEntreprise": "Trialog",
+        "link": "https://www.trialog.com/fr/accueil/",
+        "description": "Je travaillais sur l'interface d'un simulateur de borne de recharge ou d'un simulateur de voiture électrique.",
+        "badges": [
+            "angular_solidBlack",
+            "ts",
+            "html-_1_",
+            "css-3-_1_",
+            "bootstrap"
+        ]
     },
     {
         "date": "2023 — Jul",
         "roleEntreprise": "Stage développement web",
-        "nomEntreprise": "Trialog ",   
-        "link": "https://www.trialog.com/fr/accueil/"
+        "nomEntreprise": "Trialog",
+        "link": "https://www.trialog.com/fr/accueil/",
+        "description": "Participation à la maintenance et l'évolution du site.",
+        "badges": [
+            "angular_solidBlack",
+            "ts",
+            "html-_1_",
+            "css-3-_1_",
+            "bootstrap"
+        ]
     },
     {
-        "date": "Edition — 2023 Edition — 2024",
-        "roleEntreprise": "Nuit de l'Info",
-        "nomEntreprise": "",   
-        "link": ""
-    },
-    {
-        "date": "2020 — 2024",
+        "date": "2020 — 2025",
         "roleEntreprise": "Animateur Scout",
-        "nomEntreprise": "",   
-        "link": ""
+        "nomEntreprise": "",
+        "link": "",
+        "description": "Animation et gestion de projet au sein d'un groupe de scouts.",
+        "badges": [
+        ]
     }
-    
 ]

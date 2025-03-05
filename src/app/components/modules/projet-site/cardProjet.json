@@ -1,5 +1,51 @@
 [
     {
+        "nomProjet": "Foliode",
+        "date": "2024",
+        "badges": [
+            "figma-svgrepo-com 1",
+            "ts",
+            "logo-react-svgrepo-com",
+            "php",
+            "tailwind-svgrepo-com"
+        ],
+        "descriptionProjet": "Générateur de portfolios",
+        "explicationTecno": "Solution pour créer et personnaliser un portfolio.",
+        "videoFond": "../../../../assets/img/videoPreview-card/Foliode.mp4",
+        "backgroundColor": "#000000",
+        "colortexte": "#FFFFFF",
+        "textHeader": "Foliode - Générateur de Portfolios",
+        "image1": "../../../../assets/img/projet-detail/foliode/Group 37351 (1).png",
+        "image2": "",
+        "video1": "../../../../assets/video-detail-projet/foliode/FOLIODE_app.mp4",
+        "DescriptionProjet": "Foliode est un générateur de portfolios pédagogiques conçu pour simplifier la création de portfolios en ligne professionnels et accessibles. Cet outil vise à offrir aux étudiants une plateforme de présentation de leurs compétences et projets dans un format visuel et accessible, tout en facilitant le suivi pédagogique pour les enseignants via des portfolios standardisés.",
+        "Objectifs": [
+            "Offrir aux étudiants une plateforme de présentation intuitive de leurs compétences et projets.",
+            "Faciliter le suivi pédagogique pour les enseignants à travers des portfolios clairs.",
+            "Permettre la personnalisation du portfolio avec différents templates.",
+            "Assurer un hébergement sécurisé sous un sous-domaine unique."
+        ],
+        "TechnologiesUtilisees": [
+            "Next (TypeScript)",
+            "Tailwind",
+            "Docker",
+            "Symfony",
+            "PostgreSQL",
+            "Blender",
+            "Three.js",
+            "Suite Adobe",
+            "Figma"
+        ],
+        "FonctionnalitePrincipales": [
+            "Formulaire guidé pour la création du portfolio",
+            "Choix de templates de présentation",
+            "Interface utilisateur intuitive",
+            "Hébergement sur un sous-domaine dédié"
+        ],
+        "Rolesetresponsabilites": "Développement complet de la solution en mode agile.",
+        "ResultatsObtenus": "Solution déployée avec succès, facilitant la création et la gestion de portfolios pédagogiques pour étudiants et enseignants."
+    },
+    {
         "nomProjet": "Hako Shi",
         "date": "2024",
         "badges": ["angular_solidBlack 1", "scss", "ts", "html-_1_ 1", "php"],
@@ -53,6 +99,26 @@
         ],
         "TechnologiesUtilisees": [
             "HTML et CSS (SASS/SCSS) : Utilisés pour la conception et le style de l'interface utilisateur, en suivant les principes du design responsive pour une expérience multiplateforme."
+        ]
+    },
+    {
+        "nomProjet": "Forge Elidor",
+        "date": "2024",
+        "descriptionProjet": "Site de vente de couteaux",
+        "explicationTecno": "Developement Angular, HTML, CSS, nodeJS",
+        "videoFond": "../../../../assets/img/videoPreview-card/tablette.mp4",
+        "backgroundColor": "#A9C2CB",
+        "colortexte": "white",
+        "textHeader": "Site de vente et d'exposition de couteaux",
+        "image1": "../../../../assets/img/projet-detail/forge elidor/hero.png",
+        "video1": "",
+        "DescriptionProjet": "L'objectif de ce projet était d'apprendre Node.js tout en m'améliorant sur Angular. Je voulais également mettre en place un système d'achat et de commande, tout en veillant à ce qu'il soit facile à mettre à jour pour une personne n'ayant pas de compétences en développement. ",
+        "Objectifs": [
+            "S'entraîner à la conception responsive mobile first ",
+            "éussir à coder une maquette existante en la respectant à la perfection, jusqu'au dernier pixel."
+        ],
+        "TechnologiesUtilisees": [
+            "Angular et Node (SASS/SCSS) : Utilisés pour la conception et le style de l'interface utilisateur, en suivant les principes du design responsive pour une expérience multiplateforme."
         ]
     },
     {

@@ -4,6 +4,14 @@
         "logoPath": "../../../../assets/icons/badge/angular_solidBlack 1.svg"
     },
     {
+        "backgroundColor": "#03d8ff",
+        "logoPath": "../../../../assets/icons/badge/logo-react-svgrepo-com.svg"
+    },
+    {
+        "backgroundColor": "#161d2d",
+        "logoPath": "../../../../assets/icons/badge/tailwind-svgrepo-com.svg"
+    },
+    {
         "backgroundColor": "#2962E9",
         "logoPath": "../../../../assets/icons/badge/css-3-_1_ 1.svg"
     },

@@ -72,13 +72,13 @@ $soft-blue: #e3f7f7;
 }
 
 .accordion .open:nth-child(1)  p  {
-  height: 125px;
+  height: 225px;
 }
 .accordion .open:nth-child(2)  p  {
   height: 250px;
 }
 .accordion .open:nth-child(3)  p  {
-  height: 300px;
+  height: 500px;
 }
 
 .accordion-content header .title {
@@ -98,7 +98,6 @@ $soft-blue: #e3f7f7;
   line-height: 27px;
 }
 
-// PHOTO
 
 .photo-container {
   display: none;
@@ -131,8 +130,18 @@ $soft-blue: #e3f7f7;
   transition: opacity 0.3s ease-in-out;
 }
 
+
 .photo-container:hover img:nth-child(2) {
   opacity: 1;
+}
+
+
+.accordion {
+  max-width: 530px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  transition: max-width 0.5s ease-in-out, width 0.5s ease-in-out;
 }
 @media screen and (min-width: 371px) {
   .accordion .open:nth-child(2)  p  {

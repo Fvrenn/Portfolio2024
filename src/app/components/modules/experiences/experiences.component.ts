@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
-import experiences from './experience.json'
+import { Component, OnInit } from '@angular/core';
+import experiences from './experience.json';
+import badges from '../badge/data.json';
+
 @Component({
   selector: 'app-experiences',
   templateUrl: './experiences.component.html',
-  styleUrl: './experiences.component.scss'
+  styleUrls: ['./experiences.component.scss']
 })
-export class ExperiencesComponent {
-  experiencesListe: { date: string, roleEntreprise: string, nomEntreprise: string, link: string }[] = experiences;
+export class ExperiencesComponent implements OnInit {
+  experienceListe = experiences;
+  badges = badges;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }
