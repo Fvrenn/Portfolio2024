@@ -2,8 +2,13 @@
     <h1><span class="part1">Veille technologique</span><br> <span
             class="part2">Réalisé</span></h1>
   </div>
+
+
   
   <div class="section-container site" >
+    <div class="description">
+        <p>Ma veille technologique porte sur le développement web, l’IA et les frameworks. J’utilise principalement Daily.dev sur mon smartphone, ainsi que Feedly et Google Alerts. Les réseaux sociaux et les newsletters, notamment sur l’IA, m’aident à suivre les évolutions. YouTube complète ma veille pour les nouveautés et l’apprentissage.</p>
+    </div>
     <div class="container" *ngFor="let item of cardListe.slice(0, 3)">
         <a [href]="item.link" target="_blank">
             <div class="card-site">

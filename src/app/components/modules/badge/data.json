@@ -8,6 +8,10 @@
         "logoPath": "../../../../assets/icons/badge/logo-react-svgrepo-com.svg"
     },
     {
+        "backgroundColor": "#FFFFFF",
+        "logoPath": "../../../../assets/icons/badge/Flask.svg"
+    },
+    {
         "backgroundColor": "#161d2d",
         "logoPath": "../../../../assets/icons/badge/tailwind-svgrepo-com.svg"
     },
@@ -46,10 +50,6 @@
     {
         "backgroundColor": "#310000",
         "logoPath": "../../../../assets/icons/badge/adobe-illustrator 1.svg"
-    },
-    {   
-        "backgroundColor": "#47021E",
-        "logoPath": "../../../../assets/icons/badge/adobe-indesign 1.svg"
     },
     {
         "backgroundColor": "#000058",

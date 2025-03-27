@@ -82,6 +82,39 @@
         "ResultatsObtenus": "Notre équipe a livré avec succès une application web de gestion de commandes de sushi fonctionnelle et robuste, répondant aux besoins spécifiques du restaurant et offrant une expérience utilisateur agréable. L'application a été bien reçue par les clients et le personnel, et elle continue de fonctionner de manière fiable, contribuant ainsi à la croissance et au succès du restaurant."
     },
     {
+        "nomProjet": "OCPPVS",
+        "date": "2025",
+        "badges": ["angular_solidBlack 1", "scss", "ts", "html-_1_ 1", "Flask"],
+        "descriptionProjet": "Platefrome de virtulaisation de borne de recharge ",
+        "explicationTecno": "Developement Web, Angular",
+        "videoFond": "../../../../assets/img/projet-detail/OCPPVS/Screenshot_20250306_085150.png",
+        "backgroundColor": "#dad1c8",
+        "colortexte": "#202020",
+        "textHeader": "Plateforme de virtualisation",
+        "image1": "../../../../assets/img/projet-detail/OCPPVS/Screenshot_20250306_085150.png",
+        "image2": "",
+        "video1": "",
+        "DescriptionProjet": "OCPPVS (OCPP Virtual Simulator) est un simulateur cloud développé par Trialog pour tester et valider les implémentations du protocole OCPP 1.6 et OCPP 2.0.1. Il permet de simuler un grand nombre de bornes de recharge virtuelles afin d’évaluer la robustesse, la scalabilité et la conformité des systèmes de gestion des bornes (CSMS). Cet outil est essentiel pour les développeurs, intégrateurs et opérateurs de recharge souhaitant effectuer des tests de charge, de stress et de compatibilité avant un déploiement réel.",
+        "Objectifs": [
+            ""
+        ],
+        "TechnologiesUtilisees": [
+            "Angular : Framework front-end utilisé pour développer l'interface utilisateur interactive de l'application.",
+            "PHP : Langage de programmation utilisé pour créer l'API REST back-end permettant la communication entre le front-end et la base de données.",
+            "HTML et CSS (SASS/SCSS) : Utilisés pour la conception et le style de l'interface utilisateur, en suivant les principes du design responsive pour une expérience multiplateforme.",
+            "Git : Utilisé pour le contrôle de version du code source et la collaboration entre les membres de l'équipe de développement."
+        ],
+        "FonctionnalitePrincipales": [
+            "Interface utilisateur intuitive : Permet aux clients de parcourir le menu, d'ajouter des produits au panier et de passer des commandes en quelques clics.",
+            "Gestion du panier : Les clients peuvent ajouter, supprimer et modifier les articles dans leur panier avant de finaliser leur commande.",
+            "Tableau de bord administratif : Permet au personnel du restaurant de gérer les produits, les commandes et les utilisateurs, ainsi que de visualiser des rapports et des statistiques.",
+            "Authentification sécurisée : Les utilisateurs peuvent créer un compte, se connecter de manière sécurisée et accéder à leur historique de commandes.",
+            "Communication avec l'API REST : Utilisation d'une API RESTful pour récupérer et envoyer des données entre le front-end et le back-end de manière efficace et sécurisée."
+        ],
+        "Rolesetresponsabilites": "",
+        "ResultatsObtenus": "Notre équipe a livré avec succès une application web de gestion de commandes de sushi fonctionnelle et robuste, répondant aux besoins spécifiques du restaurant et offrant une expérience utilisateur agréable. L'application a été bien reçue par les clients et le personnel, et elle continue de fonctionner de manière fiable, contribuant ainsi à la croissance et au succès du restaurant."
+    },
+    {
         "nomProjet": "Tatoo Samon",
         "date": "2023",
         "descriptionProjet": "Landing Page",

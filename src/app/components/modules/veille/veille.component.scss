@@ -251,6 +251,15 @@ img.resizable-video {
     border-radius: 16px;
   }
 }
+
+.description{
+  font-family: $acid-grotesk;
+    color: #202020;
+    font-size: 17px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 22px;
+}
 @media screen and (min-width: 383px) {
   .titre h1 {
     font-size: 60px;
