@@ -87,13 +87,13 @@
         "badges": ["angular_solidBlack 1", "scss", "ts", "html-_1_ 1", "Flask"],
         "descriptionProjet": "Platefrome de virtulaisation de borne de recharge ",
         "explicationTecno": "Developement Web, Angular",
-        "videoFond": "../../../../assets/img/projet-detail/OCPPVS/Screenshot_20250306_085150.png",
+        "videoFond": "../../../../assets/video-detail-projet/ocppvs/2025-03-27 23-26-12.mkv",
         "backgroundColor": "#dad1c8",
         "colortexte": "#202020",
         "textHeader": "Plateforme de virtualisation",
         "image1": "../../../../assets/img/projet-detail/OCPPVS/Screenshot_20250306_085150.png",
         "image2": "",
-        "video1": "",
+        "video1": "../../../../assets/video-detail-projet/ocppvs/2025-03-27 23-26-12.mkv",
         "DescriptionProjet": "OCPPVS (OCPP Virtual Simulator) est un simulateur cloud développé par Trialog pour tester et valider les implémentations du protocole OCPP 1.6 et OCPP 2.0.1. Il permet de simuler un grand nombre de bornes de recharge virtuelles afin d’évaluer la robustesse, la scalabilité et la conformité des systèmes de gestion des bornes (CSMS). Cet outil est essentiel pour les développeurs, intégrateurs et opérateurs de recharge souhaitant effectuer des tests de charge, de stress et de compatibilité avant un déploiement réel.",
         "Objectifs": [
             ""
@@ -114,6 +114,42 @@
         "Rolesetresponsabilites": "",
         "ResultatsObtenus": "Notre équipe a livré avec succès une application web de gestion de commandes de sushi fonctionnelle et robuste, répondant aux besoins spécifiques du restaurant et offrant une expérience utilisateur agréable. L'application a été bien reçue par les clients et le personnel, et elle continue de fonctionner de manière fiable, contribuant ainsi à la croissance et au succès du restaurant."
     },
+    {
+        "nomProjet": "OmegaX",
+        "date": "2025",
+        "badges": ["angular_solidBlack 1", "scss", "ts", "html-_1_ 1"],
+        "descriptionProjet": "Plateforme d'échange de flexibilité énergétique pour la recharge des véhicules électriques",
+        "explicationTecno": "Développement Web, Angular, API REST",
+        "videoFond": "../../../../assets/video-detail-projet/OMEGA-X/2025-03-27 23-37-52.mkv",
+        "backgroundColor": "#dad1c8",
+        "colortexte": "#202020",
+        "textHeader": "Plateforme de gestion des flexibilités énergétiques",
+        "image1": "../../../../assets/img/projet-detail/OmegaX/Screenshot_20250306_085150.png",
+        "image2": "",
+        "video1": "../../../../assets/video-detail-projet/OMEGA-X/2025-03-27 23-37-52.mkv",
+        "DescriptionProjet": "OmegaX est un projet financé par la Commission Européenne dans lequel GIREVE anticipe l'impact des nouvelles méthodes d'échange de données sur son activité. En 2024, GIREVE a proposé un cas d'usage centré sur la flexibilité de charge des véhicules électriques pour le réseau, impliquant une collaboration entre les acteurs de l'électromobilité et les gestionnaires de réseaux (TSO/DSO). Le projet se termine en avril 2025.",
+        "Objectifs": [
+            "Démontrer l'échange de flexibilités énergétiques pour la recharge des VE",
+            "Évaluer l'impact sur les opérateurs de réseau et les fournisseurs de services",
+            "Mettre en place une architecture intégrée au dataspace OMEGA-X"
+        ],
+        "TechnologiesUtilisees": [
+            "Angular : Développement de l'interface utilisateur interactive.",
+            "TypeScript : Langage utilisé pour le développement frontend.",
+            "Flask : Framework backend pour la gestion des API REST.",
+            "HTML et SCSS : Mise en page et stylisation des composants UI.",
+            "Git : Gestion de version et collaboration entre équipes."
+        ],
+        "FonctionnalitePrincipales": [
+            "Sélection et visualisation des infrastructures de charge à travers une interface cartographique.",
+            "Intégration avec les services de prévision de charge basés sur l'IA.",
+            "Gestion et affichage des prévisions de charge avec analyses graphiques.",
+            "Communication sécurisée entre les acteurs via API REST.",
+            "Interopérabilité avec le dataspace OMEGA-X via EDC Sovity."
+        ],
+        "Rolesetresponsabilites": "Développement de la plateforme d'interaction pour les gestionnaires de réseaux et les agrégateurs d'énergie.",
+        "ResultatsObtenus": "Mise en place d'un démonstrateur permettant de tester l'échange de flexibilité énergétique pour la recharge des VE, avec intégration des prévisions IA et visualisation avancée des données."
+    },    
     {
         "nomProjet": "Tatoo Samon",
         "date": "2023",
